@@ -1,0 +1,99 @@
+2025-03-03 1pm meeting
+- means "planned topic"
+# means "personal note"
+* means "spontaneous topic", "came up during meeting"
+> means "this topic is deferred"
+! means "decision"
++ means "todo"
+
+* everyone is here
+- Is current scheduling unclear?
+	# Eemeli was unsure about next meeting date
+	* OSKARI MESSED UP
+- So what's happened?
+	- Work sessions?
+	- Matilda's tileset?
+		* Still working on it, ready today
+- About GitHub Issues
+	- Is it possible to "check in" work?
+		# Not to an issue, but a task (subset of a task package)
+		* Subissues?
+	- Better alternatives
+		# Recall: Small iterations, Clarity, low bureaucracy, self-staffed
+		# Order of increasing complexity
+		- A text file on the git repo?
+			# Keep it simple, stupid
+			# Personal preference
+			# Reduces GitHub into a mere repository host
+		* Commenting on github issues
+		- An issue could be either a task package or a task
+			# Oskari dislikes because it 
+		- GitHub Projects?
+			# Oskari looked at it, tried to make a project, no "new project" button
+		- Any other ideas?
+		* Opinions?
+			* Important that it's synchronized and easy-to-use
+			! Decision: use git repo text files
+	- Continue as before or adopt new method?
+- Alternative organizational idea:
+	- text file primacy, git repo primacy
+	- Idea of formal meeting "result types": Decisions, TODOs, ?Opinions?, ?Ideas?, ?Scheduling?
+	# in docs folder, each meeting has a folder, results are sorted into text files
+	# in docs folder, an "aggregate" of each (requires trudging through paperwork)
+	- Opinions?
+		* NOTIFICATIONS!!
+		* Maxim did get a notification for assignment 1, not another?
+		* Email notifications are cool, not spam though
+		* Hypothetical procedure: task done, mark it done on todo docment, commit 
+		* Notifications a big concern, don't jump the gun
+		+ consider further
+- Oskari's desire to rework organization
+	- Is the organization changing too fast?
+		# Then again, no *protocols* have yet been written down...
+		* beginning of development, changes in procedure the expected mode of operation
+	- Is Oskari micromanaging?
+    * Don't wonder too much, too little experience
+    * Bottleneck: no software development yet...
+	* git todo text? or Github issues?
+		* Otto: the clearest, simplest way
+		* Eemeli: text files
+		* Maxim: github issues simple too
+		* Otto: but list of tasks...
+		* Maxim: but subissues?
+		* Oskari: suissues good idea, text file too broad/open
+		* Otto: should I remake the current issues?
+		! subissues!
+- Should Oskari's meeting notes be viewable for everyone in the project?
+	- Oskari has been slacking off, not doing meeting summaries
+	# both managing a meeting and writing down everything discussed is hard 😭😭😭
+	- A more central problem?: decisions and TODOs not in a central place
+	- No process diagram...
+	* At least very convenient for learning diaries
+	* Even scribbles are better than nothing
+	! Oskari's personal meeting notes are to be made available to the team
+	+
+- Deciding on work sessions, right now?
+	# In normal software development projects, "work sessions" is just 9-5 employment
+	# The first work session might require an initial "push" from the general meeting
+	# The first work session's members can then decide on a next meeting themselves
+	- At least Oskari needs a work session
+	* Oskari: (long spiel about commitment and initiative)
+	* Eemeli: good idea
+	+ Maxim and Oskari WS: 03-04 15
+	* (work session smush smash)
+	* Oskari: I'm hands off
+	* (more work session wallaballa)
+	* Otto & Matilda decided not to specify requirements for now
+* next general meeting?
+	* can happen with less frequency
+	* Next Thursday or Monday?
+	* After work sessions?
+		* Friday recap?
+		* 13 o'clock tradition :>
+		* Maxim might not be able to make it
+* remake GitHub Issues?
+	* Edit if possible, recreate
+	* Are tasks specific enough? Otto wants feedback
+* Otto will make Godot directories in the repo
+	* Folders for art assets, scenes, scripts
+	* You may create subfolders if appropriate

@@ -1,0 +1,25 @@
+Meeting 2025-02-17, Tuesday, 1310-1400
+
+Eemeli was not present.
+
+**Game ideas**
+- **"Shopkeeping" was decided as the theme of the game** since it evoked more conversation, implying greater interest by the team
+- A navigable world is preferred over a set of GUIs, being more interesting despite greater technical difficulty
+- "Potionmaking" is a top candidate for sub-theme of the game, implying mechanics related to production of the sold goods
+
+**Developing the game**
+- Development should be iterative and not planned waterfall-style
+- **As quality criteria, "software quality" is considered more important than "game quality".** In other words, the software should behave as-defined and with fewer bugs, rather than the game be fun or artistically cohesive
+- For the time being, art/music/assets are not a concern
+
+**Godot**
+- Last meeting suggested people become acquainted with Godot, which did not happen
+- An implementation detail, considered acceptable to delay
+
+**Implementation plan**
+- 10 days left at the time of meeting, 7 at the expected time of next formal meeting
+- Someone should be selected to write the implementation plan
+
+**A "little meeting" will be held on 2025-02-18 Tuesday, 13 (1pm)**, to discuss ideas for gameplay, theme, etc. Not an "official" meeting, join if you want to!
+
+**The next "official" meeting will be on 2025-02-20, Thursday, 13 (1pm)**
