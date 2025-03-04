@@ -1,0 +1,94 @@
+Meeting 2025-02-20 1315
+
+
+(thought about timeslots)
+
+1319
+Everyone is present
+
+1321
+
+1322
+use time to hone in time
+
+1324
+have to have requirements
+
+CORE requirements
+	vague to implementaiton
+
+1327
+few general things, iterate on requirements
+
+not just programming; who is in charge of game design? NPC behavior?
+
+1328
+differentiation between "feels fun" and "how it works"
+
+1329
+Hope of multiple visions and approaches
+
+1330
+implementation plan deadline 2025-02-27
+
+implementation plan too broad means more thinking and vagueness
+
+1331
+No good to have something so specific, forces waterfalls
+Better to be flexible
+
+1332
+*Process* ought to be specified though
+
+1333
+Lecturer didn't give slides :<
+
+1334
+Pitch ideas, specify further on the game mechanics
+
+1335
+More in depth than "storekeeping"
+Know what to do next!
+Smart
+
+1336
+What's the specifics
+(design document???)
+shop idea, get the original suggestors to expand
+
+1340
+***Microsoft Office synchronized design document!***
+
+1342
+Commitment, exact time, exact date (i.e. Godot meeting)
+We should make an appointment
+(Write down promises)
+(Principles)
+Promises require deadlines, commitments, writing down
+
+1346
+Central information
+
+1356
+sync documentation, change 
+
+1358
+next thursay, return date
+schedule channel
+
+1400
+work blocking one another
+
+1402
+Mounaim sets up GitHub
+
+1404
+Godot meeting
+i
+1405
+2025-02-22 Saturday 15 3pm
+
+1409
+
+1416
+

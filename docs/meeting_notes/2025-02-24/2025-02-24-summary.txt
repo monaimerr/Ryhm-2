@@ -1,0 +1,10 @@
+**Notes for meeting 2025-02-24 13 (1pm)**
+
+**Implementation plan critique**
+- Not enough visuals: add Matilda's concepts, possibly some charts
+- No target audience
+- Specifics of roles not really known
+
+**Decisions**
+- GitHub Issues will be used for coordinating tasks
+- "flask" will be the in-code name of the game project 

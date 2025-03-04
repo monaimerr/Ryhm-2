@@ -1,0 +1,48 @@
+Meeting 2025-02-10, Monday, 13-14
+
+All members were present.
+
+The following matters were discussed:
+
+**Project ideas**
+Largely, three kinds of project ideas were discussed:
+ - A video game
+ - A productivity app
+ - A mind-map/interactive graph for storywriting
+
+**Video game**
+ - May be technically challenging (Engine, programming language, etc.)
+ - Graphical scope limited to 2D
+ - Godot is primary suggestion for video game engine
+ - Godot uses C, C#, C++, GDScript
+ - Other engines suggested: Unity (C#, JS), GameMaker (custom language), Processing (Java, Python), PyGame (Python)
+ - Game genre not yet specified
+ - Requires art assets
+ - Minor concern over scope creep
+
+**Productivity app**
+ - Many existing applications to reference
+ - Specific functionality variable (tracking nutrition, tasks, finances, etc.)
+ - Easily divisible into parts, complexity can be added on-demand
+ - Will likely be a webapp: cross-platform and mobile-friendly
+
+**Storywriting tool**
+ - A graph/mindmap/wiki for story writers to keep track of their stories
+ - Facts and relationships visualized on a graph or mindmap or a hypertext entry
+
+**Interim**
+A project idea will be chosen on the next meeting. Until then, ideas should be developed and further specifics determined.
+ - Whoever suggested an idea will be responsible for developing it
+ - Implementation details should be decided (For a webapp, some web framework; for a game, a game engine and genre)
+ - By the end of the next meeting, a project idea *must* have been decided
+
+**Project implementation plan**
+ - About 1.5 weeks of time left to submit
+ - Exact submission requirements are vague
+ - Our plan will likely be concise and to-the-point
+ - Lecturer shouldn't complain about terseness if he didn't specify against it
+ - Maybe 2, 5 pages
+ - Should be checked with everyone
+ - Will become more relevant once a project idea has been selected
+
+The next meeting will be on **2025-02-13, Thursday, at 13**

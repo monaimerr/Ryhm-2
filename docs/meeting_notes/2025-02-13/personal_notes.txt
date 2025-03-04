@@ -1,0 +1,9 @@
+Voting method?
+	- multiple choice voting is my preference
+DevOps: probably me
+	- knows git best
+	- test automation?
+	- build tools?
+	- integration... whatever it means for our project
+
+
