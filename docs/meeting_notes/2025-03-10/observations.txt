@@ -7,3 +7,15 @@ Notes of observations before the meeting to potentially discuss
 	- It is important for users of Nodes (we, the developers) to know how to use them
 	- Inputs, outputs
 	- A function is not a unit
+- Some other things that could be documented (to discuss):
+	- Organization of godot files
+	- Entity relationships
+	- Overall game architecture
+	- Gameplay loop
+	- Process of figuring out "what do we do"
+		- for example
+			- 1. User stories: What the user wants to experience
+			- 2. Requirements: What the software should accomplish
+			- 3. Specifications: What the software should be
+			- 4. Tasks: What to do to execute specifications
+	- Work sessions
