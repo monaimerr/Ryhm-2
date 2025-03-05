@@ -19,3 +19,10 @@ Notes of observations before the meeting to potentially discuss
 			- 3. Specifications: What the software should be
 			- 4. Tasks: What to do to execute specifications
 	- Work sessions
+- Git branching strategy
+	- Current strategy: only main branch in every repository
+		- Lots of merge commits
+	- Alternative: local repository feature branches
+		- Avoids zig-zags of merge commits
+		- Still has to be merged into local main
+- Review git documentation
