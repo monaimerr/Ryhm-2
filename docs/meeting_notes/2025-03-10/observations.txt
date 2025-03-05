@@ -1,0 +1,9 @@
+Notes of observations before the meeting to potentially discuss
+
+- "Work session" paradigm incompatible with current task assignment process
+	- Programmers can communicate directly in the work session, meaning the task assignment process is unnecessary bureaucracy
+		- The original purpose of the task assignment process is to facilitate "lone" development
+- "unit" API documentation
+	- It is important for users of Nodes (we, the developers) to know how to use them
+	- Inputs, outputs
+	- A function is not a unit
