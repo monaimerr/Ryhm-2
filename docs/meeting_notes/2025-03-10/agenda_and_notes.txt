@@ -1,0 +1,79 @@
+2025-03-10 1300 Meeting
+Agenda and notes
+- planned topic
+# personal note
+* spontaneous topic
+! decision
++ personal todo
+
+- Did we do well?
+	- Is this an acceptable pace?
+    	* Maxim: yeah sure it's fine
+	* Denis and Eemeli did meet on Thursday, discussed inventory implementation/style, nothing technical
+	* Denis did push some commits!
+	* Inventory concept shows a grid
+    	* Otto: How's the inevntory system?
+    	* Denis: not much yet but I do UI and Eemeli does implementation
+	- Was the pace too slow or limited by another factor?
+		* Any blocking?
+		* Eemeli: Didn't really know what to do, messy scene directory
+	
+- Criticism & Mistakes
+	- Let's not blame, mistakes are a process fault
+	- We expected mistakes
+	* Mismatches are a good chance for documentation!
+	- List (* any others?):
+    	- Maxim misplacing things in Godot file directory
+		- Mounaim use of deprecated Godot feature (TileMap instead of TileMapLayer) and non-descriptive git commit message
+			* copied from online cheatsheet
+			* TileMapLayer written as an instruction, not seen or noticed?
+			! Otto: it would be good to change to TileMapLayer
+		* commits via GitHub?
+			* Easy to use for just uploading a file
+			! Doesn't really conflict with the bash approach, allow
+- Development process
+	- "Work session"-centric or "volunteer chip-in" centric?
+		* Maxim: I think it's a good idea
+		* Eemeli: we should continue work sessions
+		* Otto: yeah work sessions, and current work assignment system is high bureaucracy. Also programmers don't know exactly what to do (instructions unclear)
+		* Eemeli: Yeah, let's make a programmer chat for opinions and discussion
+		* Oskari: what about blocking, waiting for instructions?
+		* Eemeli: Yeah but it's just discussion and opinions. Let's have a chat that's separate 
+	* GitHub Issues
+		* high maintenance and bureaucracy
+		* Decision to stop using?
+		! Decision: Use text iles in the git repo, no more GitHu Issues
+		* flip-flopping...
+	* TODO-replacements
+		* Lists for individuals
+		* Otto will assign tasks to programmers
+		* Text box in todo lists, programmers check upon task completion
+		! Decision: TODO list in the git repo, freeform (Up to Otto)
+	* Issue of unclarity
+		! Decision: programmer chat on Discord
+	- 
+	- Adopt Scrum?
+		- Oskari didn't bring it up due to pride and stubborness
+		- Processes, roles, terms already defined for us
+		- Though it is for part-time/full-time workers
+		* Otto: aren't we doing that already
+		* Oskari: 2 bbig appeals: defined terminology, and product owner managing product backlog 
+		! Decision: Product backlog! Matilda will maintain it
+	- Git branching
+		- No branching vs local branching
+		* bad argument
+- Documentation
+	- Git documentation, is it clear?
+	* Oskari: *Git Tirade*
+	* Basically please run the configuration option in "git_pull_avoid_accidental_merges.txt"
+
+- work sessions
+	* People understood that work sessions organize next work sessions
+	* Matilda, Otto, Oskari should meet to refine requirements
+		* unspecificity blocked work
+
+* Godot version change
+	* to be discussed by Otto Matilda Oskari
+* Meeting over
+	* Todos will appear soon
+	* Otto Matilda Oskari will specify requirements and make tasks
