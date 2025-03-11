@@ -3,7 +3,7 @@ Project Task List:
 	[ ] (Oskari) Ask the teacher, confirm the presentation date (2025-04-02?)
 	[ ] (Oskari) Plan work-week 12
 	[ ] (Oskari) Plan work-week 13
-[ ] (Otto) Organize Godot directory 
-	[ ] () Document organization
-	[ ] () Move out-of-order files
+[X] (Otto) Organize Godot directory 
+	[X] () Document organization
+	[X] () Move out-of-order files
 [ ] (Matilda) Write a list of functional features (A scrum product backlog)
