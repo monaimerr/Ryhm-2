@@ -6,4 +6,4 @@ Project Task List:
 [X] (Otto) Organize Godot directory 
 	[X] () Document organization
 	[X] () Move out-of-order files
-[ ] (Matilda) Write a list of functional features (A scrum product backlog)
+[X] (Matilda) Write a list of functional features (A scrum product backlog)

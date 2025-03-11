@@ -1,0 +1,65 @@
+Functional features -list
+
+Player character
+[X] Player character can move around the map.
+
+Interaction with objects
+[] Player can take items to their inventory.
+[] Player can use items from their inventory to make potions.
+[] Player can put items back to shelves.
+[] Player can remove an item from their inventory via trashcan.
+
+Customers
+[] Customers will walk in the shop and wait in line.
+[] Interacting with customer will open customer dialogue.
+[] Interacting with customer will start timer for that customers service.
+[] If customers request is filled within time limit, the potion will be given to the customer and player receives money.
+[] If customers request is not filled within time limit, the customer will leave.
+
+-- THIS IS WHERE WE HAVE A WORKING GAME CYCLE --
+
+Important features for better game experience
+[] The game can be paused and unpaused. (Customer service timers will freeze and then continue where it left off.)
+[] The game has a main menu.
+[] The game can be saved and loaded.
+
+Variability of potions and customers
+[] Player has access to recipe book (top menu) with directions on making each potion.
+[] Interacting with the cauldron will open a menu of all craftable potions.
+(If the player has correct ingredients for only one potion, only that one potion will appear on the list.)
+[] There are multiple potion requests the customers can ask from the player.
+[] There are multiple customer characters who will visit the shop.
+
+Other shop complications
+[] Player can choose to open and close the shop.
+	[] Customers will only come in when shop is open.
+[] Player has a set amount of money to start the game.
+[] Player can use their money to buy ingredients.
+(There is a shopping window for this that can be opened from the menu on top of the screen.)
+	[] The bought ingredients will be delivered to the shop after a short delay.
+	(The delay should be about half of a customers service timer.)
+		[] Game pausing should also effect on this delay timer.
+	[] The amount of each ingredient is shown on the corresponding ingredient shelf.
+[] Player has a set amount of ingredients to start the game.
+
+Day cycle
+[] Player will have a daily "energy" (a timer that will start at the beginning of each day).
+	[] Game pausing should also effect on this timer.
+[] Player can choose to sleep on bed (if the shop is closed) to end the day and refill energy.
+	[] Day counter.
+
+Game ending
+[] If players daily energy is fully depleted (the timer runs out), the game will end in losery.
+[] The game has a money goal.
+[] Once the goal is reached, the game will end in victory.
+
+-- THIS IS WHERE WE HAVE A FULLY WORKING GAME --
+
+Fun things to possibly add if there is time
+[] Crafting "minigame" for making potions at the cauldron instead of our list, choose and click -type system.
+(Will take more planning.)
+[] Casual interaction with customers
+(When player has filled a certain customers request a certain number of times, the customer will have a chat with the player.)
+	[] The player can choose what to answer to the customer.
+
+
