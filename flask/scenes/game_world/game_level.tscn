@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://hvucvjcnynp2"]
 
-[ext_resource type="Texture2D" uid="uid://4hj7nb0ln3f8" path="res://art/tilemap.png" id="1_fyjbd"]
+[ext_resource type="Texture2D" uid="uid://4hj7nb0ln3f8" path="res://art/tilemap.png" id="1_okrmp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_v83db"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7duoy"]
-texture = ExtResource("1_fyjbd")
+texture = ExtResource("1_okrmp")
 texture_region_size = Vector2i(300, 300)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-76.3675, -70.7107, 150, -84.8528, 150, 150, -50.9117, 150, -82.0244, 132.936, -82.0244, 65.0538)

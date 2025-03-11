@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf1qppornvxyf"]
+
+[ext_resource type="Script" uid="uid://dmekal5rpxt38" path="res://scripts/UI/inventory/inventory.gd" id="1_rslpu"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rslpu")

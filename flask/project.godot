@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="Flask"
-run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="res://scenes/main/main.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://art/icon.svg"
 
 [dotnet]
 
 project/assembly_name="Flask"
+
+[file_customization]
+
+folder_colors={
+"res://art/": "red",
+"res://resources/": "yellow",
+"res://scenes/": "purple",
+"res://scripts/": "green"
+}
 
 [input]
 

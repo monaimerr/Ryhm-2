@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://burv151ryj8af"]
 
-[ext_resource type="Script" path="res://entities/player.gd" id="1_wpmom"]
+[ext_resource type="Script" uid="uid://cba6cx1tc2m4u" path="res://scripts/entities/characters/player/player.gd" id="1_wpmom"]
 [ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_ixotw"]
-[ext_resource type="PackedScene" uid="uid://jgin8edvjbbq" path="res://interaction/interacting_component.tscn" id="3_08wh6"]
+[ext_resource type="PackedScene" uid="uid://jgin8edvjbbq" path="res://scenes/interaction/interacting_component.tscn" id="3_08wh6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jbn18"]
 radius = 64.0

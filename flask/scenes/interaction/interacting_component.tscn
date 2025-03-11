@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://jgin8edvjbbq"]
 
-[ext_resource type="Script" path="res://interaction/interacting_component.gd" id="1_xtcx1"]
+[ext_resource type="Script" uid="uid://butfoe6olp6fh" path="res://scripts/interaction/interacting_component.gd" id="1_aip3c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_a5rfy"]
 radius = 56.0
@@ -11,7 +11,7 @@ outline_size = 3
 outline_color = Color(0, 0, 0, 1)
 
 [node name="InteractingComponent" type="Node2D"]
-script = ExtResource("1_xtcx1")
+script = ExtResource("1_aip3c")
 
 [node name="InteractRange" type="Area2D" parent="."]
 collision_layer = 0
