@@ -1,0 +1,44 @@
+# Principles
+Avoid branching so that merge conflicts don't "build up".
+Please keep commits scoped. It helps organization if there are no commits with the message "some work" doing small changes everywhere.
+
+# Workflow
+## Before starting work
+`git pull` to download remote changes to your local repository.
+It is a good idea to keep your git repository clean (i.e. no untracked, not ignored files). If you have untracked files/changes and use `git pull`, it may refuse or cause a merge conflict.
+## After work
+`git add .` to select all changes in the directory to commit.
+`git commit -m "message"` to commit the changes with the given message.
+`git pull` to merge any remote changes.
+`git push` to upload local changes to the remote repository.
+
+# The Shell
+Git Bash is a unix-style *shell* (specifically, it is the `bash` shell). When given text, the shell interprets it as a command and executes it, writing output in response.
+The shell splits a command into "words". For example, the commit:
+> git commit -m "This is a message."
+is split into the words "git", "commit", "-m", "This is a message.". You can see that double-quotes are used to specify that a piece of text is not split by a space.
+
+# Commands
+> git status
+Display information about the current state of the git repository.
+Shows current branch, known deviation from remote branch, untracked files (changed but not selected files) and files selected for the next commit.
+
+> git fetch
+Download any new history data from remote repository.
+
+> git pull
+First fetches any history data from the remote repository.
+If any new commits are downloaded from the remote repository, those commits will be applied on the local branch. If the local repository has commits not present in the remote repository, git will try to automatically merge the commits. In the case an automatic merge cannot be safely resolved, a merge conflict begins and the user must manually resolve the conflict.
+
+> git add path/to/file
+"Select" the file or changes in the file to be included in an upcoming commit.
+
+> git add .
+Selects the current directory, including all files and subdirectories.
+
+> git commit -m "message"
+Commit any selected changes into the repository's history with the given message.
+Giving a message as an argument to the command is important. If a commit does not have a message given directly in the command, git will run the 'vim' text editor which is infamous for being cryptic and difficult to even exit.
+
+> git push
+First fetches any history data from the remote repository. If no merge conflicts will happen, uploads local changes to the remote repository.

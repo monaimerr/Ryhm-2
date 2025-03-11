@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://dn1tkkyqgwunq"]
+
+[ext_resource type="Script" uid="uid://dmanksdwh44tb" path="res://scripts/entities/objects/test_object.gd" id="1_4ncnm"]
+[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_8n0fj"]
+[ext_resource type="PackedScene" uid="uid://b1keub3h102q6" path="res://scenes/interaction/interaction_area.tscn" id="3_meet0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8xqu"]
+size = Vector2(112, 112)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7n2p3"]
+radius = 120.0
+
+[node name="TestObject" type="StaticBody2D"]
+script = ExtResource("1_4ncnm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l8xqu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8n0fj")
+
+[node name="Interactable" parent="." instance=ExtResource("3_meet0")]
+interact_name = "Press [E] to interact"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_7n2p3")

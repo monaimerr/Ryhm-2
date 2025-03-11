@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1kgo5jsbegj3"]
+
+[ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_l3cfh"]
+[ext_resource type="PackedScene" uid="uid://dn1tkkyqgwunq" path="res://scenes/entities/objects/test_object.tscn" id="2_6q06x"]
+[ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="3_ow5a4"]
+[ext_resource type="PackedScene" uid="uid://clx5pfo6e6oah" path="res://scenes/entities/objects/test_object_2.tscn" id="4_hujxm"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_l3cfh")
+
+[node name="TestObject" parent="." instance=ExtResource("2_6q06x")]
+position = Vector2(576, 256)
+
+[node name="player" parent="." instance=ExtResource("3_ow5a4")]
+position = Vector2(192, 128)
+
+[node name="TestObject2" parent="." instance=ExtResource("4_hujxm")]
+position = Vector2(960, 448)

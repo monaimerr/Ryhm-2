@@ -1,0 +1,35 @@
+Requirements decided on 2025-02-27:
+	- there is a player character that moves according to player input
+	- there is an inventory system and items which can be moved from-to inventories
+	- there are interactive entities in the game world
+These are to be expanded and elaborated.
+In the meeting Oskari suggested "Given-When-Then" for specifying requirements. Oskari read up more on it and noted that G/W/T is more apt for clarifying desired behavior using examples. It's essentially a formalized user story, a.k.a. example scenario.
+
+Some example G/W/T's for the above requirements:
+    "There is a player character that moves according to player input"
+    Given
+		- The player is in direct control of the player character
+		- There is free space to the left of the player character
+	When
+		The player enters a movement input to move to the left
+	Then
+		- The player character has moved toward the left
+
+	"There is an inventory system and items which can be moved from-to inventories"
+	Given
+		- The player character has a full inventory
+	When
+		The player character tries to take the item
+	Then
+		- The player character does not have the item
+		- The player is informed their inventory is full
+
+	"There are interactive entities in the game world"
+	Given
+		- The player character is near a pot
+		- The player character's inventory has enough ingredients
+	When
+		The player character interacts with the pot
+	Then
+		- The player character's inventory has fewer ingredients
+		- The player character's inventory has more potions

@@ -1,0 +1,26 @@
+GitHub Issues
+	- not for each little task
+	- no chosen organization for little tasks
+	- Issues are for task packages
+
+What to DO
+	- the player character moves in a 2d top-down world
+	- the player character has an inventory
+
+Energy and time?
+Day night cycle?
+not yet
+
+not merely interaction
+
+TODO
+	- git cheatsheet
+	- docs
+
+Requirements:
+	- there is a player character that moves according to player input
+	- there is an inventory system and items which can be moved from-to inventories
+	- there are interactive entities in the game world
+
+
+

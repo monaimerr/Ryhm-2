@@ -1,0 +1,6 @@
+To avoid accidental merges, execute the following in Git-Bash, in the repo directory (or any subdirectory):
+> git config pull.ff only
+This is to ensure that `git pull` does not automatically cause a merge. Once/if `git pull` complains that branches have to be merged, use the following command:
+> git merge --no-commit
+If it responds that an automatic merge went well, you can then simply commit.
+The other possibility is a merge conflict, which is beyond the scope of this document.

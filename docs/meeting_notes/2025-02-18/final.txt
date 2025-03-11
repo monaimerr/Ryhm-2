@@ -1,0 +1,12 @@
+**"Mini"meeting 2025-02-18, Tuesday, 1305 to 1415**
+
+Present: Eemeli, Maxim, Mounaim, Oskari, Otto
+
+**Things discussed**
+- Git usability a concern: clunky on Windows, Godot doesn't seem to have built-in integration. Oskari knows about Git, should make a Git cheatsheet
+- The game will likely be a top-down view, centered on a character that can move around a world
+- An open question: *What's the objective? What's the gameplay loop?*
+- Oskari might become project leader, will be decided on next formal meeting
+- We should ask lecturer if using Godot is acceptable: **Yes, using Godot is fine.**
+
+**Next meeting will be the formal meeting on 2025-02-20, Thursday, at 13 (1pm)**

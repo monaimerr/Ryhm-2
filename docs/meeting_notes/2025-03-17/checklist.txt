@@ -1,0 +1,5 @@
+[ ] Should be two weeks left: announce workweek planning
+[ ] Have a "should have these by-the-end-of-the-week" document
+[ ] Choose next general meeting date
+[ ] Write down next general meeting date in own calendar
+[ ] Write down next general meeting date in #schedule

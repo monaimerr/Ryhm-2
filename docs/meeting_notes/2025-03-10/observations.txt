@@ -1,0 +1,28 @@
+Notes of observations before the meeting to potentially discuss
+
+- "Work session" paradigm incompatible with current task assignment process
+	- Programmers can communicate directly in the work session, meaning the task assignment process is unnecessary bureaucracy
+		- The original purpose of the task assignment process is to facilitate "lone" development
+- "unit" API documentation
+	- It is important for users of Nodes (we, the developers) to know how to use them
+	- Inputs, outputs
+	- A function is not a unit
+- Some other things that could be documented (to discuss):
+	- Organization of godot files
+	- Entity relationships
+	- Overall game architecture
+	- Gameplay loop
+	- Process of figuring out "what do we do"
+		- for example
+			- 1. User stories: What the user wants to experience
+			- 2. Requirements: What the software should accomplish
+			- 3. Specifications: What the software should be
+			- 4. Tasks: What to do to execute specifications
+	- Work sessions
+- Git branching strategy
+	- Current strategy: only main branch in every repository
+		- Lots of merge commits
+	- Alternative: local repository feature branches
+		- Avoids zig-zags of merge commits
+		- Still has to be merged into local main
+- Review git documentation

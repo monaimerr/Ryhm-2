@@ -1,0 +1,36 @@
+Minimeeting 2025-02-18
+Game ideas
+
+1306
+
+1307
+Present: Oskari, Mounaim, Maxim, Eemeli
+
+Pivoting
+
+1310
+Last meeting, shopkeeping decided as core idea
+
+1311
+Godot tutorials
+Otto should show us, previous experience
+
+1313
+Git? git bad?
+Oh! git IDE integration!
+
+1314
+Git usable still on Windows
+
+1317
+do a Git cheatsheet
+
+1318
+
+1319
+Git/tooling is not really touched upon in the computer science degree
+
+1320
+sustainable ICT, harry karhu uses Linux, shows commands, doesn't really explain them much
+would help a lot with job searching
+
