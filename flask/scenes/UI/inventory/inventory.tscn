@@ -1,8 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://bf1qppornvxyf"]
+[gd_scene load_steps=3 format=3 uid="uid://bf1qppornvxyf"]
 
 [ext_resource type="Script" uid="uid://dmekal5rpxt38" path="res://scripts/UI/inventory/inventory.gd" id="1_rslpu"]
+[ext_resource type="PackedScene" uid="uid://dmy04rieg2scu" path="res://scenes/UI/inventory/slot.tscn" id="2_22sjf"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_rslpu")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 216.0
+offset_bottom = 85.0
+columns = 5
+
+[node name="Slot1" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot2" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot3" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot4" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot5" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot6" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot7" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot8" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot9" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
+
+[node name="Slot10" parent="GridContainer" instance=ExtResource("2_22sjf")]
+layout_mode = 2
