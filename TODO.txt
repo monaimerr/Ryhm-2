@@ -53,11 +53,14 @@ Project Task List:
 		-The customers can be interacted with, which brings up a dialog window (dialog will be implemented later)
 		-The customer scene needs to be generic so instanciating different looking customers will be easier
 [] (Mounaim) Implement the trash can
-		-The player can remove items from their inventory by interacting with the trash can
+		-The player can remove any potions they don't need from their inventory by interacting with the trash can
 	[ ] (Mounaim) Create a new scene for the trash can
 		-Use the trash can sprite from tilemap.png
 		-Create a new atlas texture when choosing a resource for Sprite2D, then load tilemap.png as the atlas and crop accordingly
 		-Use interaction component to detect when the player interacts with the trash can
+		-There needs to be a way for the player to choose which potion they want to discard.
+		-You will probably need access to the player's inventory. You can get a reference to it with "InventoryManager.playerInv".
+		-You can use the "InventoryManger.remove_item" function to remove items from the player's inventory.
 [] (Otto) Improve the inventory UI
 		-The inventory should be toggleable 
 		-The inventory should more closely match the original concept art
