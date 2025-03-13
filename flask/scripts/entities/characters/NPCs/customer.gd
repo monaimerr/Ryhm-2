@@ -1,12 +1,15 @@
 extends CharacterBody2D
 
 @onready var interactable: Area2D = $Interactable
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@export var spriteFrames: SpriteFrames
 @export var canMove = true
 @onready var wait_timer: Timer = $WaitTimer
 @onready var collision_shape_2d: CollisionShape2D = $Blocked/CollisionShape2D
 
 
 func _ready() -> void:
+	animated_sprite_2d.sprite_frames = spriteFrames
 	interactable.interact = _on_interact
 
 func _on_interact():

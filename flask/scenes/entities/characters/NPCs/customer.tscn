@@ -1,19 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cw3477t4v07bx"]
+[gd_scene load_steps=6 format=3 uid="uid://cw3477t4v07bx"]
 
 [ext_resource type="Script" uid="uid://dwe6w5mu4qqxn" path="res://scripts/entities/characters/NPCs/customer.gd" id="1_6vy2j"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_vqhfs"]
 [ext_resource type="PackedScene" uid="uid://b1keub3h102q6" path="res://scenes/interaction/interaction_area.tscn" id="3_ersvl"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_no01q"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_vqhfs")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tfayv"]
 size = Vector2(129, 130)
@@ -29,7 +17,6 @@ script = ExtResource("1_6vy2j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(65, 64)
-sprite_frames = SubResource("SpriteFrames_no01q")
 
 [node name="CustomerCollision" type="CollisionShape2D" parent="."]
 position = Vector2(64.5, 64)

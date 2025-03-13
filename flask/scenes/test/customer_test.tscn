@@ -1,14 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://pidaa88lmabx"]
+[gd_scene load_steps=8 format=3 uid="uid://pidaa88lmabx"]
 
 [ext_resource type="Script" uid="uid://ypyebmy6uc3y" path="res://scripts/test/customer_test.gd" id="1_h046c"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="1_iuhwy"]
 [ext_resource type="PackedScene" uid="uid://cw3477t4v07bx" path="res://scenes/entities/characters/NPCs/customer.tscn" id="2_6tkrd"]
+[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="4_nuas3"]
 
 [sub_resource type="Curve2D" id="Curve2D_6tkrd"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 542, 685, 0, 0, 0, 0, 542, 250, 0, 0, 0, 0, 542, 685)
 }
 point_count = 3
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4c2yn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_nuas3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h046c"]
 size = Vector2(120, 52.5)
@@ -32,6 +44,7 @@ loop = false
 [node name="Customer" parent="Path2D/PathFollow2D" instance=ExtResource("2_6tkrd")]
 position = Vector2(87, -61)
 rotation = 1.5708
+spriteFrames = SubResource("SpriteFrames_4c2yn")
 
 [node name="Counter" type="Area2D" parent="."]
 
