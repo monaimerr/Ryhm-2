@@ -1,0 +1,10 @@
+[X] Vote on project idea
+[ ] Decide on roles
+	[ ] - If game decided, art/assets?
+	[/] - DevOps?
+	[X] - Otto: project owner
+[ ] Start design process
+	[ ] - What language, framework, tools?
+	[ ] - How will production be coordinated?
+[ ] 7th member?
+[X] Next meeting date

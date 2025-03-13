@@ -1,0 +1,23 @@
+PROJECT FILE ORGANIZATION
+
+The structure of the project directory is as follows:
+
+-flask
+	-art
+		-(sub-folders)
+	-resources
+		-(sub-folders)
+	-scenes
+		-(sub-folders)
+	-scripts
+		-(sub-folders)
+
+
+-Scenes, scripts, art and resources are kept in separate folders.
+
+-Any new files you create should be saved in the appropriate folder.
+
+-Sub-folders should be created to better categorize files. For example, the scene folder has separate sub-folders for entities and UI elements. If there isn't a suitable sub-folder for the file you're saving, you should create a new sub-folder for it.
+
+-If you save the file in the wrong folder, you can just move it to the correct place using the Godot file system. You can move files around in Godot 4.4 without having to worry about breaking any file path references.
+

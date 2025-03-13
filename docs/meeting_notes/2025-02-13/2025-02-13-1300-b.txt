@@ -1,0 +1,26 @@
+Meeting 2025-02, Thursday, 13-14
+
+Project idea selected: **Video Game**
+
+**Concerns raised about developing a video game:**
+- Godot most likely engine to be used, everyone needs to familiarize themselves with it
+- Using an existing framework may not be "technical" enough for this course
+- Not necessarily *difficult*, but *more* work
+
+**Video game brainstorming**
+- Needs to be 2D
+- Shopkeeper game
+   - Something like "Papa's Pizzeria" where producing products is a core game mechanic
+   - Alternatively, a simulator game where store management and data, economics more prominent
+- Something like 'Vampire Survivors'
+- Maybe some other ideas
+
+**What to do next**
+- Specific topics may have more casual conversation
+- Throw out ideas for the game
+   - Maybe even give examples or references
+   - @otto3882  decided as project owner
+- Give Godot a try, discuss in #godot
+- No git-repositories yet
+
+**Next meeting on 2025-02-17, Monday, 13 (1pm)**

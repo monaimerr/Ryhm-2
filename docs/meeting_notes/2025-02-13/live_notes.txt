@@ -1,0 +1,83 @@
+live notesssss
+
+1302 First few minutes waiting for Maxim to arrive
+1305 Session started, Maxim joins soon after
+
+
+1307 Game idea
+	genre: Platformer, top-down?
+	shop-keeping?
+		- serving customers as a store manager?
+	probably singleplayer (multiplayer too ambitious)
+1313	Godot as a game engine? seems simple from a programming perspective...
+	Likely technical enough
+
+1315
+	GDScript dominant language, concern: relevant skill? Necessary?
+	C/C++/C#
+
+1318
+	Webapp productivity app
+	Easily expandable (game is too)
+	Architecture: 2nd party hosts a main server
+
+1322
+	Story writing app idea
+	defining relation types
+	Needs expansion
+
+1325
+	game?
+	productivity-app: difficult?
+	story-app seems easiest
+
+1326
+	seven people
+	story-idea too basic
+	game project difficult, seven people might be possible
+	not necessarily hard, more work
+	game idea intriguing
+	webapp difficult : synchronization
+	webapp: employability, relevant to software in general
+	story app is a novel idea; no previous references
+	webapp if it turns out too complex
+
+1340 video game vins
+    project leader?
+	Otto seems best candidate for a "project owner"
+1343
+	Vampire survivors game
+	shopkeeper game?
+	What if game is completed early?
+		Can be expanded iteratively
+1348
+    Shopkeepergame
+    	Something like papa's pizzeria
+	Game exipmels
+		Simulator games (goat, truck)
+			2d shop simulator?
+			maybe even expanding?
+			NPCs
+1354
+	Shopkeeping more relatable to vampires
+		but vampires are more flexible
+		dopamine!!!
+	Potions and interacting mechanics
+	
+Next subjects of discussion
+	game ideas
+		lots of brainstorming
+	implementation
+		get to know Godot
+		lots of brainstorming
+
+Next meeting 2025-02-13 1400
+
+more casual discussion
+recaps, everyone on the same page, lots of people
+assuming schedules don't change much
+	Monday 1pm
+	Thursday 1pm?
+text channels?
+
+Wait on devops

@@ -1,0 +1,53 @@
+
+Implementation plan!
+Goals of this "implementation plan" stage
+	return implementation plan
+		good score
+		how? comprehensiveness?
+	Order of production
+	Topics:
+		The Goal (Project Owner)
+		Requirements
+			limit bureaucracy
+				timeslots
+			Iteration on requirements?
+		Process
+			Programming paradigm
+			iteration specifics
+			platforms (git, GitHub, etc.)
+			Handling failure
+		
+
+- Best How: quick iterations (aka agile?) 
+
+Tasking:
+making tasks, dicing out work
+
+Requirements
+Preferrably flexible and outwards-in mid-process specifiable
+
+
+Note:
+when kindly asked, people do not familiarize with material
+so, familiarization with Godot during task?
+
+====
+
+Persons:
+	Denis
+	Eemeli
+	Maxim
+	Mounaim
+	TheOcularPudu
+	Oskari
+	Otto
+
+Roles:
+	Project Leader: Oskari
+	Project Owner: Otto
+	Tester:
+	DevOps:
+	Assets:
+	Programmer:
+
+Don't forget learning diary!

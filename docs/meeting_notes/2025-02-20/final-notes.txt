@@ -1,0 +1,18 @@
+Notes for meeting 2025-02-20, 1315-1420
+
+All team members were present.
+
+**Implementation plan**
+- We should have "core requirements" that are vague but can be iterated upon and specified (necessitates a "living" requirements document)
+- Plan should not be too broad, but also not too specific
+- Specifications for exact behavior of game elements should be available/reachable
+- Procedures of game development should be clear
+
+**Documentation**
+- Important documentation will now be kept in the form of network-synchronized Word documents, shared via pinned links on the #docs channel
+- #docs channel exists also for documenting changes to those documents 
+
+**Commitments**
+- If you need something done, or promise to do something, make a message in #schedule with a deadline. This is to help with committing to work in this project
+
+Next meeting will be on 2025-02-22, Saturday, 3pm. See #schedule

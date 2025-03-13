@@ -1,0 +1,66 @@
+Project Task List:
+[ ] (Oskari) Schedule the project
+	[ ] (Oskari) Ask the teacher, confirm the presentation date (2025-04-02?)
+	[ ] (Oskari) Plan work-week 12
+	[ ] (Oskari) Plan work-week 13
+[X] (Otto) Organize Godot directory 
+	[X] () Document organization
+	[X] () Move out-of-order files
+[X] (Matilda) Write a list of functional features (A scrum product backlog)
+[ ] (Denis) Create a test scene
+	[ ] (Denis) Create a new scene that can be used for testing purposes
+		-The idea is that this scene can be used to test new features that have been implemented
+		-The programmer who is testing the new feature can then create a duplicate of this basic test scene and add their new features to it
+	[ ] (Denis) Add the game level scene, the player scene and the inventory UI scene to this new test scene
+[] (Maxim) Implement the interactive ingredient shelves
+		-The shelves can store only one type of ingredient
+		-The shelf tracks how many items are on it
+		-The player can only take an ingredient from the shelf if the count of ingredients is greater than 0
+		-The player can place an item back on the shelf if they have at least one of the required type of item in their inventory
+		-The shelf scene needs to be generic, which means that the sprite of the shelf and the type of ingredient need to be exported variables that can be defined after instanciating the scene
+		-Create any test scenes you need in the test scene folder
+	[ ] (Maxim) Create a new scene that works as the foundation for ingredient shelves
+		-The shelf uses the "Item" custom resource type to define the type of item it stores
+		-The script exports the item variable so it can be defined after instanciating the scene
+		-The scene also exports the sprite used for the shelf
+	[ ] (Maxim) Implement taking functionality
+		-Use the interaction component to detect when the player interacts with the shelf
+		-Add the item to the player's inventory if there is at least one of the items on the shelf and the player's inventory isn't full
+		-You can use the "InventoryManager.add_item" function of the global inventory_manager script
+	[ ] (Maxim) Implement placing functionality
+		-The player can place the ingredients back on the shelf
+		-You can use the "InventoryManager.remove_item" function to remove the items from the player inventory
+	[ ] (Maxim) Implement visible counter for the number of ingredients in the shelf
+		-Using a text label seems to be the easiest option
+[] (Eemeli) Implement the cauldron
+		-The cauldron is used to craft potions
+		-Interacting with the cauldron brings up a menu where recipes are displayed and the player can choose to craft a potion
+		-Create any test scenes you need in the test scene folder
+	[ ] (Eemeli) Create a new scene for the cauldron
+		-Use the cauldron sprite from the tilemap.png file
+		-Create a new atlas texture when choosing a resource for Sprite2D, then load tilemap.png as the atlas and crop accordingly.
+		-Use the interaction component to detect when the player is interacting with the cauldron
+	[ ] (Eemeli) Create a scene for the caudron UI
+		-The menu is displayed when the player interacts with the cauldron
+		-The menu can be basic for now
+	[ ] (Eemeli) Implement potion crafting
+		-When the player chooses a recipe, the script needs to check that the required items are present in the player inventory
+		-You can get a reference to the player inventory with "InventoryManager.playerInv"
+		-If all the items are present, the items are removed from the inventory and the potion is added to the inventory
+		-You can use "InventoryManager.add_item" and "InventoryManager.remove_item" functions to implement these features
+[] (Otto) Implement the first prototype of a customer NPC
+		-The customers can walk up to the counter and wait in line if there are other customers
+		-The customers can be interacted with, which brings up a dialog window (dialog will be implemented later)
+		-The customer scene needs to be generic so instanciating different looking customers will be easier
+[] (Mounaim) Implement the trash can
+		-The player can remove any potions they don't need from their inventory by interacting with the trash can
+	[ ] (Mounaim) Create a new scene for the trash can
+		-Use the trash can sprite from tilemap.png
+		-Create a new atlas texture when choosing a resource for Sprite2D, then load tilemap.png as the atlas and crop accordingly
+		-Use interaction component to detect when the player interacts with the trash can
+		-There needs to be a way for the player to choose which potion they want to discard.
+		-You will probably need access to the player's inventory. You can get a reference to it with "InventoryManager.playerInv".
+		-You can use the "InventoryManger.remove_item" function to remove items from the player's inventory.
+[] (Otto) Improve the inventory UI
+		-The inventory should be toggleable 
+		-The inventory should more closely match the original concept art

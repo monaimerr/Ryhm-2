@@ -1,0 +1,67 @@
+AGENDA
+	- Github repo
+		[_] Repo?
+	- Requirements
+		[X] Has Matilda made any requirements?
+			- not yet
+		[X] What are Matilda's thoughts on G/W/T?
+			- not yet
+		[X] Are the requirements in the git repo specific enough?
+		- requirements process
+			[X] Should a requirements document be made? Where?
+				- Update the existing file
+	- task organization
+		- Otto writes task packages, everyone writes tasks
+			[X] OK with everyone?
+		- A github issue is a task package, containing tasks
+			[X] OK with everyone?
+		- Decide on task organization
+			- So far task packages do not have internal organizational structure
+			- Recall: Small iterations, Clarity, Low bureaucracy, Self-staffing
+				* task packages can have varying size
+				* integration between systems
+		* let's stark working and not try to predict the future
+	* matilda's art and animation
+		*
+	- does everyone have a role?
+		[X] Does Mounaim have enough stuff to do?
+			* Add Mounaim to programming team
+	* How to iterate on requirements?
+		* public forum?
+		* two-layer requirements?
+			* accepted
+		* how do Matilda and Otto communicate?
+			* initiative
+	* WORKING SESSIONS?
+		* requires less initiative, induces commitment
+		*
+	* what to do next?
+		* work packages
+			* player mvoement
+				* maxim
+			* interaction with entities
+				* maxim
+			* item system
+				* eemeli
+				* denis
+			* game world
+				* mounaim
+		* Matilda doing tileset (done by monday)
+	* retrospective
+	
+
+
+SPONTANEOUS
+	- organization of people into separate teams (allowed, up to Otto)
+	- flexible or isolated programmer assignment?
+		- flexible, (specialization will happen naturally)
+	- write process document (atleast for an overview)
+	2025-03-03 1pm
+	- 
+
+DEFERRED
+	- two layers of requirements? 
+
+TODO
+	- Make a process documnet detailing relationships
+	- Factorio top-down view blog posts

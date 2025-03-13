@@ -1,0 +1,107 @@
+
+meeting 2025-02-17 1310
+
+1312
+Bringing Denis L up to speed
+probably shopkeeping game, using Godot
+
+1315
+Has anyone tried out Godot?
+
+1317
+Eemeli not present
+Delay "implementation details" for later
+Lets decide on the video game genre and ideas
+
+1319
+Maxim would rather have some exploration
+A shopkeeping game could also have moving about
+Video game engine for a static interface is overkill
+
+1321
+Does it makes sense to design the game as waterfall?
+Weekly iterations
+
+1322
+Milestones?
+Split into parts i.e. character movement, etc.
+
+1323
+Otto as project owner would accept ideas but "will be the final word"
+
+1324
+Prototyping and 'exploration'
+Let's first decide on the core idea!!! DO not waste effort on useless prototypes
+
+1325
+Basics first as a foundation
+Working system first before 'fun'
+
+1327
+"A good game" is a difficult task, an ideal but not a priority 
+
+1328
+What criteria for a game project?
+Probably bug-free and "behaves as defined"
+
+1329
+OcularPudu is fine with "okay"
+
+1330
+A large part of how a game feels polished is visual design and sound desgin
+Art person? assets cohesion?
+Volunteers? OcularPudu?
+
+1334
+Tools like Krita, GIMP, even MS Paint
+
+1335
+Every group member should be present for deciding the core idea
+
+1336
+two core ideas:
+	explo
+
+1338
+Mechanics vs Theme
+Top down view? side view? Interfaces?
+
+1341
+Fundamental mode of interaction first?
+Objection: We don't even know the core theme yet!
+
+1342
+Ideas about shopkeeping
+	- Interacting with the store
+	- Selling to customers
+
+1343
+Would be more interesting to have a character
+Would be easier to have a static interface
+
+1345
+Theme! Shopkeeping: potionmaking shop, being a shopkeeper, machines to make different ingredients, custom potionmaking
+Came up already a few times so must be a good idea
+Could apply to drinks or other things!
+Papa's pizzeria game? Too static
+A static interface does not necessarily lower the technical ceiling
+
+1350
+Sound design!
+But a late concern
+Music? Some have some experience...
+Stock effects are fine
+
+1352
+No big decisions, one guy missing...
+Flesh out shopkeeping idea?
+Ideas for gameplay mechanics, setting, art style
+Only 10 days before deadline to plan submission!
+
+A little meeting on 2025-02-18 Tuesday, 1pm, mby 15 minutes
+	To discuss game ideas
+	
+A big meeting probably on 2025-02-22, Thursday, 1pm
+
+Decision: Shopkeeping!
+Probably locked in

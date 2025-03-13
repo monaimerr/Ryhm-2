@@ -1,0 +1,56 @@
+Given
+	- the inventory has N size
+	- the inventory has free space
+When
+	an item is attempted to add to the inventory
+Then
+	- the inventory has the item
+
+Given
+When
+	the player presses the inventory key
+Then
+	- the witch's inventory is displayed
+
+Given
+	- the inventory has N size
+	- the inventory is full
+When
+	an item is attempted to add to the inventory
+Then
+	- the inventory is not overfull
+
+Given
+	- the witch is at the pot
+	- the witch has the required ingredients to brew a potion
+When
+	the witch interacts with the pot
+Then
+	- the required ingredients are deduced from the witch's inventory
+	- a potion is added to the witch's inventory
+
+Given
+	- the shop is open
+When
+	a customer arrives at the shop
+Then
+	- the customer will try to approach the counter
+
+Given
+	- the shop is open
+	- there exists a customer
+	- that customer is at the counter
+	- the witch has a potion
+When
+	the witch interacts with the customer
+Then
+	- there is one less potion in the witch's inventory
+	- the customer tries to walk to the exit
+
+Given
+	- the witch is at the trash can
+When
+	the witch interacts with the trash can
+Then
+	- the witch's inventory is empty
+

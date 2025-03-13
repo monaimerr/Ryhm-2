@@ -1,0 +1,30 @@
+
+Everybody present
+
+Implementation plan review
+
+critique:
+	Roles after process, roles come from process
+	What is the structure?
+	Incomplete
+	More visuals
+	1 hour is arbitrary
+	No target audience!
+	Expand on what the roles mean
+
+Target audience:
+	- casual, cozy
+	- 
+
+Issues page (Let's try it out)
+
+Decisions:
+    Tester: Denis
+    DevOps: Oskari, Mounaim (Shared)
+    Decision: Matilda 
+
+	Game in-code name: flask
+
+
+
+
