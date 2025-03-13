@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("1_bppqf")
-name = "test_item"
+type = 0
+name = "test_ingredient"
 texture = ExtResource("2_bif4y")
 metadata/_custom_type_script = "uid://b16jyki4v2h55"
