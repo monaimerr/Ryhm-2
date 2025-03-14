@@ -1,0 +1,47 @@
+# Git Cheatsheet V2
+
+## Scenarios
+
+### I'm starting work
+
+Make sure your local repository is up-to-date. Go to "I want to update my local repository."
+
+You can now start working.
+
+### I've done some work and want to commit it
+
+Run `git status` to see what files have been changed, created, deleted. You have to select some of those files to commit. You can use `git add --all` to select every change, or only run `git add <file> <file> <...>` to select particular files. The files you added are now staged for commit.
+
+Now run `git commit -m "message"`. Replace the message with an appropriate description of the commit's contents. If a message is not given, git will throw you into a vim session. (To avoid this, you can add `--no-edit` to the command.)
+
+Git should repeat the commit message back to you, and mention how many changes were committed. If so, you are done. However, git does not automatically upload your new commit to the remote repository. Go to "I want to upload my commits".
+
+### I want to upload my commits
+
+Make sure your local repository is up-to-date. Go to "I want to update my local repository".
+
+Then `git push`.
+
+### I want to update my local repository
+
+First, run `git status` to see if you have uncommitted changes. Commit them if you do.
+
+Run `git pull`. There are three possible outcomes:
+
+1. No new commits from anybody else. Your repository is already up-to-date.
+
+2. You have no new commits, and someone else has made new commits and pushed them to the remote repo. `git pull` will "fast forward" your branch. In clearer terms, new commits will be downloaded and applied to your branch, so that your directory will be up-to-date.
+
+3. You have your own new commits, and someone else has made new commits and pushed them to the remote repo. Assuming correct configuration (`git config pull.ff only`) `git pull` will refuse to do anything because of divergent branches. Go to "I have to resolve divergent branches".
+
+### I have to resolve divergent branches
+
+The best option for this project in particular is called "rebasing". You do not need to know the details, other than the fact it avoids unnecessary merge commits.
+
+Run `git rebase`. There are two possible outcomes:
+
+1. Git responds with "successfully rebased and updated ...". The divergent branches have been resolved and you can return to working normally.
+
+2. Git responds with something like "CONFLICT(...): merge conflict in ..." and "could not apply ..." That's a merge conflict. It's rare enough in practice that I won't go into detail.
+
+A merge conflict is caused by the same lines being changed in different commits. To resolve, look for "<<<<<<<", "=======", ">>>>>>>" in the file with the conflict. They mark two different "versions" that are in conflict. Pick one or the other, or merge them together manually. Remove the markers. Run `git add <file> ...`, commit, then `git rebase --continue`. You should a similar message as in case #1.
