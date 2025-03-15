@@ -36,11 +36,11 @@ Project Task List:
 		-The cauldron is used to craft potions
 		-Interacting with the cauldron brings up a menu where recipes are displayed and the player can choose to craft a potion
 		-Create any test scenes you need in the test scene folder
-	[ ] (Eemeli) Create a new scene for the cauldron
+	[x] (Eemeli) Create a new scene for the cauldron
 		-Use the cauldron sprite from the tilemap.png file
 		-Create a new atlas texture when choosing a resource for Sprite2D, then load tilemap.png as the atlas and crop accordingly.
 		-Use the interaction component to detect when the player is interacting with the cauldron
-	[ ] (Eemeli) Create a scene for the caudron UI
+	[x] (Eemeli) Create a scene for the caudron UI
 		-The menu is displayed when the player interacts with the cauldron
 		-The menu can be basic for now
 	[ ] (Eemeli) Implement potion crafting
