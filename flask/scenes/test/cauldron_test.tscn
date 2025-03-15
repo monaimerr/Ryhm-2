@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://chvypg251s4aw"]
+
+[ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="1_0nw8v"]
+[ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="2_senbr"]
+
+[node name="CauldronTest" type="Node2D"]
+position = Vector2(444, 192)
+
+[node name="player" parent="." instance=ExtResource("1_0nw8v")]
+position = Vector2(163, 240)
+
+[node name="Cauldron" parent="." instance=ExtResource("2_senbr")]
+position = Vector2(389, 244)
