@@ -29,10 +29,10 @@ size = Vector2(120, 52.5)
 script = ExtResource("1_h046c")
 
 [node name="player" parent="." instance=ExtResource("1_iuhwy")]
-position = Vector2(747, 181)
+position = Vector2(749, 246)
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(-219, 114)
+position = Vector2(-217, 179)
 curve = SubResource("Curve2D_6tkrd")
 metadata/_edit_group_ = true
 
@@ -49,5 +49,5 @@ spriteFrames = SubResource("SpriteFrames_4c2yn")
 [node name="Counter" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Counter"]
-position = Vector2(324, 208)
+position = Vector2(326, 273)
 shape = SubResource("RectangleShape2D_h046c")

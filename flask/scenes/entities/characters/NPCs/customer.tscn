@@ -24,6 +24,7 @@ shape = SubResource("RectangleShape2D_tfayv")
 disabled = true
 
 [node name="Interactable" parent="." instance=ExtResource("3_ersvl")]
+interact_name = "[E] Talk to Customer"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
 position = Vector2(65, -130.5)
