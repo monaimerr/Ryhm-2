@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://pidaa88lmabx"]
+[gd_scene load_steps=9 format=3 uid="uid://pidaa88lmabx"]
 
 [ext_resource type="Script" uid="uid://ypyebmy6uc3y" path="res://scripts/test/customer_test.gd" id="1_h046c"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="1_iuhwy"]
 [ext_resource type="PackedScene" uid="uid://cw3477t4v07bx" path="res://scenes/entities/characters/NPCs/customer.tscn" id="2_6tkrd"]
 [ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="4_nuas3"]
+[ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="5_4c2yn"]
 
 [sub_resource type="Curve2D" id="Curve2D_6tkrd"]
 _data = {
@@ -31,6 +32,8 @@ script = ExtResource("1_h046c")
 [node name="player" parent="." instance=ExtResource("1_iuhwy")]
 position = Vector2(749, 246)
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(-217, 179)
 curve = SubResource("Curve2D_6tkrd")
@@ -51,3 +54,12 @@ spriteFrames = SubResource("SpriteFrames_4c2yn")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Counter"]
 position = Vector2(326, 273)
 shape = SubResource("RectangleShape2D_h046c")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource("5_4c2yn")]
+offset_left = 67.0
+offset_top = 56.0
+offset_right = 67.0
+offset_bottom = 56.0
+scale = Vector2(1.5, 1.5)

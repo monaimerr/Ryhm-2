@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var wait_timer: Timer = $WaitTimer
 @onready var collision_shape_2d: CollisionShape2D = $Blocked/CollisionShape2D
 @onready var interaction_collision: CollisionShape2D = $Interactable/CollisionShape2D
+@onready var wait_time_progress_bar: ProgressBar = $WaitTimeProgressBar
 
 
 func _ready() -> void:
@@ -15,9 +16,14 @@ func _ready() -> void:
 	interactable.is_interactable = false
 
 func _on_interact():
+	print("timer started")
 	if (interactable.is_interactable):
-		print("timer started")
 		wait_timer.start()
+
+#Updates the progressbar visual based on the remaining wait_timer time
+func _physics_process(delta: float) -> void:
+	if (!wait_timer.is_stopped()):
+		wait_time_progress_bar.value = wait_timer.time_left / wait_timer.wait_time * 100
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:

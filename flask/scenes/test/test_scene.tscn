@@ -5,16 +5,21 @@
 [ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="3_cntqm"]
 
 [node name="TestScene" type="Node2D"]
-position = Vector2(-560, -203)
 
 [node name="game_level" parent="." instance=ExtResource("1_lpkca")]
-position = Vector2(-1829, 434)
+scale = Vector2(0.4, 0.4)
 
 [node name="player" parent="." instance=ExtResource("2_omf4g")]
-position = Vector2(1062, 656)
+position = Vector2(1016, 514)
+scale = Vector2(0.8, 0.8)
+speed = 450
 
 [node name="PlayerCamera" type="Camera2D" parent="player"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource("3_cntqm")]
+offset_left = 84.0
+offset_top = 69.0
+offset_right = 84.0
+offset_bottom = 69.0
