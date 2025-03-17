@@ -1,2 +1,7 @@
 - I'm taken by surprise by the probable 2025-04-02 deadline...
 	- Much more scheduling/timekeeping should be done?
+- Common text TODO file leads to merge conflicts!
+	- Splitting TODO's into files for each member seems sane
+- Main menu as a features?
+- Component documentation
+	- Make creator document how to use

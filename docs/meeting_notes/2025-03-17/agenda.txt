@@ -1,0 +1,92 @@
+Meeting 2025-03-17, 1700 (5pm)
+
+- New Meeting Time
+    - Determine a new reliable meeting time
+        * Starting with Eemeli
+		* Eemeli has lecture  12-14, prefers monday 15, 
+		* Maxim has lecture 12-14, 14-16, prefers at least monday 17
+		* Eemeli can work with 1pm wednesday
+        	* works for Maxim, except 12-14
+		* Denis says wednes day is free except for a lecture
+		* Wdnesday 1pm (with exceptions?)
+		! Wednesday 1pm decided!
+		* Wednesday this week, or next week
+		* Could be necessary to meet on this week's wednesday
+		! Nope, next week's wednesday
+* Eemeli and Denis work sessions
+	* Didn't agree last time, good that it was pointed out
+	* Done
+- Surprise deadline and scheduling improvements
+    - Two weeks left for April 2nd deadline
+        - Start making final report?
+	* functional requirements milestones?
+		* Matilda didn't have any schedules in mind
+	* Otto thinks we're moving slowly
+	* Matilda mentions blocks, complicatiosn from synchronization
+	* Oskari: let's set at least SOME goal
+    	* allows reflection and lets us see what's slowing us down
+	* Week goals delegated to a work session on wednesday
+    - Workweek planning for the remaining duration
+    - "By-the-End-of-the-Week" Document
+    - Timekeeping and ensuring development is on time
+        - Oskari (project leader)
+        - Otto (technical lead)
+	* Slowness of development
+	* Deadlines won't to inspire faster development
+	* Are we going fast enough?
+	>
+* Maxim: "How much of the project is done per TODO?"
+* Maxim: "Let's focus on finishing TODO's"
+* No information on how project is graded!
+> Are we going fast enough?
+	* Otto: It would be better if we could move faster
+	* Slowness is "justifiable", most people unfamiliar with the tooling
+	* Otto: People didn't look into Godot, so doing tasks is hard for them
+	* Otto: We should've enforced/tracked learning of tools
+* Mounaim has git issues
+	* Meeting made, resolved for now
+- Software development
+    - TODO File Management
+        - Address common text TODO file leading to merge conflicts
+        - Discuss splitting TODOs into individual files for each member
+		* At least GitHub Issues handled synchronization
+		* Too late to change back xd
+		! If the TODO file has another merge conflict within upcoming week, Oskari will split it up into individual files 
+    - Component Documentation
+        - Necessity of component documentation
+        - Assign responsibility for documenting components and their usage
+		* No meeting for "Let's go over what we've done"
+		* Otto: there hasn't been necessity for it
+		* Otto: I tried to specify it far enough in the TODO
+		* Oskari: biggest unavoidable issue is that most people don't feel confident figuring out Godot implementations for specified behaviors
+		* Otto: It would be faster if I just did it myself
+		* Oskari: Godot uncertainty is biggest roadblock
+		* Otto: Maybe I should specify less about the implementation? Would be difficult for programmers though
+		* Oskari: Just having this experience is valuable for the completion of the course
+    - Merge Conflict Resolution
+        - Need for document to resolve merge conflicts
+        - Assign someone to create/update documentation
+		* Why did I write this down, no-one would object
+
+- Course Expectations and Product Quality
+    - Emphasize the importance of process over product
+    - Discuss the possibility of a knowledgeable person "rushing out the product" vs. learning about project management
+	- Embrace "one-man team" and relegate others to support roles?
+
+* Agenda ran out
+    * Otto: oh that's it? No major changes?
+    * Otto: This process is inefficient
+	* Oskari: I disagree, it just doesn't overcome other issues
+
+* Course grading
+	* Matilda: By this point we probably pass the course, we're just failing ourselves
+	* What is the grade?
+
+	  vvv NOTICE vvv
+* Matilda: Learning journal must be returned by 2nd April also
+	  ^^^ NOTICE ^^^
+
+CHECKLIST
+[X] Decide next general meeting date
+[X] Write next general meeting date in personal calendar
+[X] Announce next general meeting date in #schedule
