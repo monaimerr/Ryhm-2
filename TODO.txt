@@ -1,6 +1,7 @@
 Project Task List:
 [ ] (Oskari) Schedule the project
-	[ ] (Oskari) Ask the teacher, confirm the presentation date (2025-04-02?)
+	[X] (Oskari) Ask the teacher, confirm the presentation date (2025-04-02?)
+	[ ] (Oskari) Write guide for merge conflict resolution
 	[ ] (Oskari) Plan work-week 12
 	[ ] (Oskari) Plan work-week 13
 
