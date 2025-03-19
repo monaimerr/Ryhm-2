@@ -1,19 +1,103 @@
-[gd_scene load_steps=5 format=3 uid="uid://burv151ryj8af"]
+[gd_scene load_steps=14 format=3 uid="uid://burv151ryj8af"]
 
 [ext_resource type="Script" uid="uid://cba6cx1tc2m4u" path="res://scripts/entities/characters/player/player.gd" id="1_wpmom"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_ixotw"]
+[ext_resource type="Texture2D" uid="uid://6c168n3wx3ok" path="res://art/witch_sprites.png" id="2_620ub"]
 [ext_resource type="PackedScene" uid="uid://jgin8edvjbbq" path="res://scenes/interaction/interacting_component.tscn" id="3_08wh6"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_jbn18"]
-radius = 64.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrr0s"]
+atlas = ExtResource("2_620ub")
+region = Rect2(0, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ba871"]
+atlas = ExtResource("2_620ub")
+region = Rect2(300, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0tm6"]
+atlas = ExtResource("2_620ub")
+region = Rect2(0, 300, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d14gw"]
+atlas = ExtResource("2_620ub")
+region = Rect2(300, 300, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c14xj"]
+atlas = ExtResource("2_620ub")
+region = Rect2(0, 600, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8srq"]
+atlas = ExtResource("2_620ub")
+region = Rect2(300, 600, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mfmy"]
+atlas = ExtResource("2_620ub")
+region = Rect2(0, 900, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjvuc"]
+atlas = ExtResource("2_620ub")
+region = Rect2(300, 900, 300, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5poen"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrr0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ba871")
+}],
+"loop": true,
+"name": &"down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0tm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d14gw")
+}],
+"loop": true,
+"name": &"left",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c14xj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8srq")
+}],
+"loop": true,
+"name": &"right",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mfmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjvuc")
+}],
+"loop": true,
+"name": &"up",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d1hxy"]
+radius = 55.0
+height = 130.0
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_wpmom")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_ixotw")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -37)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_5poen")
+animation = &"down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_jbn18")
+shape = SubResource("CapsuleShape2D_d1hxy")
+debug_color = Color(0.871055, 0.317852, 0.386885, 0.42)
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_08wh6")]
