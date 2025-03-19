@@ -6,6 +6,14 @@
 
 [node name="TestScene" type="Node2D"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -5840.0
+offset_top = -3749.0
+offset_right = 7242.0
+offset_bottom = 3897.0
+color = Color(0.149011, 0.0458664, 0.141157, 1)
+
 [node name="game_level" parent="." instance=ExtResource("1_lpkca")]
 scale = Vector2(0.4, 0.4)
 
@@ -22,7 +30,7 @@ zoom = Vector2(0.6, 0.6)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource("3_cntqm")]
-offset_left = 84.0
-offset_top = 69.0
-offset_right = 84.0
-offset_bottom = 69.0
+offset_left = 153.0
+offset_top = 76.0
+offset_right = 153.0
+offset_bottom = 76.0

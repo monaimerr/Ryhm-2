@@ -63,7 +63,7 @@ Project Task List:
 		-If all the items are present, the items are removed from the inventory and the potion is added to the inventory
 		-You can use "InventoryManager.add_item" and "InventoryManager.remove_item" functions to implement these features
 
-[] (Otto) Implement the first prototype of a customer NPC
+[x] (Otto) Implement the first prototype of a customer NPC
 		-The customers can walk up to the counter and wait in line if there are other customers
 		-The customers can be interacted with, which brings up a dialog window (dialog will be implemented later)
 		-The customer scene needs to be generic so instanciating different looking customers will be easier
