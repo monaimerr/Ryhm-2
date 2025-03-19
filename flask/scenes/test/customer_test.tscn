@@ -2,58 +2,42 @@
 
 [ext_resource type="Script" uid="uid://ypyebmy6uc3y" path="res://scripts/test/customer_test.gd" id="1_h046c"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="1_iuhwy"]
-[ext_resource type="PackedScene" uid="uid://cw3477t4v07bx" path="res://scenes/entities/characters/NPCs/customer.tscn" id="2_6tkrd"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="4_nuas3"]
+[ext_resource type="PackedScene" uid="uid://duyo58ap5vswk" path="res://scenes/entities/characters/NPCs/customer_path_follow.tscn" id="3_nuas3"]
 [ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="5_4c2yn"]
+[ext_resource type="Texture2D" uid="uid://4hj7nb0ln3f8" path="res://art/tilemap.png" id="5_n8ka2"]
 
 [sub_resource type="Curve2D" id="Curve2D_6tkrd"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 542, 685, 0, 0, 0, 0, 542, 250, 0, 0, 0, 0, 542, 685)
+"points": PackedVector2Array(0, 0, 0, 0, 542, 688, 0, 0, 0, 0, 542, 250, 0, 0, 0, 0, 542, 618)
 }
 point_count = 3
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_4c2yn"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_nuas3")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="AtlasTexture" id="AtlasTexture_opcty"]
+atlas = ExtResource("5_n8ka2")
+region = Rect2(596.174, 589.555, 601.821, 316.992)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h046c"]
-size = Vector2(120, 52.5)
+size = Vector2(628.837, 230.124)
 
 [node name="CustomerTest" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_h046c")
 
 [node name="player" parent="." instance=ExtResource("1_iuhwy")]
+y_sort_enabled = true
 position = Vector2(749, 246)
+speed = 475
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(-217, 179)
+y_sort_enabled = true
+position = Vector2(-218, 83)
 curve = SubResource("Curve2D_6tkrd")
 metadata/_edit_group_ = true
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(542, 685)
-rotation = -1.5708
-loop = false
-
-[node name="Customer" parent="Path2D/PathFollow2D" instance=ExtResource("2_6tkrd")]
-position = Vector2(87, -61)
-rotation = 1.5708
-spriteFrames = SubResource("SpriteFrames_4c2yn")
-
-[node name="Counter" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Counter"]
-position = Vector2(326, 273)
-shape = SubResource("RectangleShape2D_h046c")
+[node name="CustomerPathFollow" parent="Path2D" instance=ExtResource("3_nuas3")]
+position = Vector2(479, 688)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -63,3 +47,23 @@ offset_top = 56.0
 offset_right = 67.0
 offset_bottom = 56.0
 scale = Vector2(1.5, 1.5)
+
+[node name="CustomerSpawnTimer" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="Counter" type="Sprite2D" parent="."]
+position = Vector2(326, 231)
+scale = Vector2(0.345916, 0.367174)
+texture = SubResource("AtlasTexture_opcty")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="Counter"]
+scale = Vector2(0.999904, 0.959935)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Counter/Area2D"]
+position = Vector2(1.44556, 7.0929)
+scale = Vector2(0.933317, 1.26987)
+shape = SubResource("RectangleShape2D_h046c")
+
+[connection signal="timeout" from="CustomerSpawnTimer" to="." method="_on_customer_spawn_timer_timeout"]

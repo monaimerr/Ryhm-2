@@ -16,8 +16,7 @@ func _ready() -> void:
 	interactable.is_interactable = false
 
 func _on_interact():
-	print("timer started")
-	if (interactable.is_interactable):
+	if (interactable.is_interactable and wait_timer.is_stopped()):
 		wait_timer.start()
 
 #Updates the progressbar visual based on the remaining wait_timer time

@@ -1,19 +1,16 @@
 extends Node2D
 
-@onready var path_follow_2d: PathFollow2D = $Path2D/PathFollow2D
-@onready var customer: CharacterBody2D = $Path2D/PathFollow2D/Customer
-@export var moveBy = 150
-@onready var timer = $Path2D/PathFollow2D/Customer/WaitTimer
-@onready var counter: Area2D = $Counter
+@onready var path_2d: Path2D = $Path2D
+@onready var customer_path_follow_scene = preload("res://scenes/entities/characters/NPCs/customer_path_follow.tscn")
 
 func _ready() -> void:
-	timer.timeout.connect(customer_timeout)
+	pass
+	
 func _process(delta: float) -> void:
-	if customer.canMove:
-		move_customer(delta)
+	pass
 	
-func move_customer(delta):
-	path_follow_2d.progress += moveBy * delta
-	
-func customer_timeout():
-	print("timeout")
+
+# Instanciates a new customer and adds it as path2D's child.
+func _on_customer_spawn_timer_timeout() -> void:
+	var instance = customer_path_follow_scene.instantiate()
+	path_2d.add_child(instance)
