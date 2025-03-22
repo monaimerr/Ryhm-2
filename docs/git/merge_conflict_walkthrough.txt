@@ -1,0 +1,55 @@
+# Git cheatsheet: Merge Conflict Edition
+
+When `git rebase` responds with a line that starts with "CONFLICT", you know you have a merge conflict. Something like:
+`CONFLICT (content): Merge conflict in file.txt`
+What it means is that git found a text line with two different changes. It stops automatic merging and asks you to figure out how to combine them.
+
+First, `git status` will tell you about "unmerged paths". Those are files that contain conflicts. Git has edited those files to highlight the conflict.
+
+Let's use an example.
+
+Here is an original file, e.g. `main.py`:
+```
+print("hello")
+```
+
+Commit A changes `main.py` to:
+```
+print("Hello!")
+```
+
+Commit B changes `main.py` to:
+```
+print("hello, world")
+```
+
+Let's say you made commit A, so you have the "A-version" of `main.py`. The remote repository has the "B-version" of `main.py`. You try to pull the B-version, git refuses because there are diverging branches. You then try `git rebase`. Git attempts to reconcile changes automatically, but both commit A and commit B changes the line `print("hello")` into different things. So git can't decide what the final line should be, and initiates a merge conflict.
+
+Here is how `main.py` will look:
+```
+<<<<<<< HEAD
+print("hello, world")
+=======
+print("Hello!")
+>>>>>>> 7ccd5b3 (Commit A)
+```
+It's quite messy.
+
+The "<<<<<<< HEAD" means "this is the beginning of the pulled-in version" (commit B) (See Endnote).
+The "=======" means "here ends the pulled-in version, and the local version starts" (Commit A).
+">>>>>>> 7ccd5b3 (Commit A)" ends Commit A's portion. (Note that the number and "Commit A" may be different.)
+
+Basically, you are shown the two versions, and you should derive a "merged" version. The merged version should not have the markers, those are only for informing you about the conflict.
+
+You as a human can understand the intent of each commit. One adds a "world", another fixes up the grammar. So the merged version could have both intelligently merged into one:
+```
+print("Hello, world!")
+```
+
+You can also pick one or the other, or even throw both away if you want. The correct path is what makes sense in your context. That's why git throws its hands up and says "I don't know how to combine these, you figure it out."
+
+Once you've edited the file into a merged version, you have to add it, and then `git rebase --continue --no-edit`. The rebase procedure will continue, possibly showing you another merge conflict. Repeat until it's done.
+
+Once rebasing is done, you may push the changes with `git push`.
+
+Endnote: In general, "HEAD" means "the current/selected, commit/version of the branch". We don't use branching, so treat "HEAD" as the selected version of the repo. You may then wonder why HEAD is on Commit B and not Commit A. The reason is how `git rebase` works: it takes your local changes and *rebases* them on top of the remote changes. It does it like so: Undo Commit A, HEAD is now at the base commit. Pull in Commit B, HEAD is now at Commit B. Apply Commit A, merge conflict, let the user resolve it. See how Commit B is the version upon which Commit A is applied? HEAD is the "current state", or the "state that is being worked on", and it's Commit A that is being applied onto the "current state", the HEAD, Commit B.
