@@ -18,7 +18,7 @@ Project Task List:
 
 	[ ] (Denis) Add the game level scene, the player scene and the inventory UI scene to this new test scene
 
-[] (Maxim) Implement the interactive ingredient shelves
+[X] (Maxim) Implement the interactive ingredient shelves
 		-The shelves can store only one type of ingredient
 		-The shelf tracks how many items are on it
 		-The player can only take an ingredient from the shelf if the count of ingredients is greater than 0
@@ -26,21 +26,21 @@ Project Task List:
 		-The shelf scene needs to be generic, which means that the sprite of the shelf and the type of ingredient need to be exported variables that can be defined after instanciating the scene
 		-Create any test scenes you need in the test scene folder
 
-	[ ] (Maxim) Create a new scene that works as the foundation for ingredient shelves
+	[X] (Maxim) Create a new scene that works as the foundation for ingredient shelves
 		-The shelf uses the "Item" custom resource type to define the type of item it stores
 		-The script exports the item variable so it can be defined after instanciating the scene
 		-The scene also exports the sprite used for the shelf
 
-	[ ] (Maxim) Implement taking functionality
+	[X] (Maxim) Implement taking functionality
 		-Use the interaction component to detect when the player interacts with the shelf
 		-Add the item to the player's inventory if there is at least one of the items on the shelf and the player's inventory isn't full
 		-You can use the "InventoryManager.add_item" function of the global inventory_manager script
 
-	[ ] (Maxim) Implement placing functionality
+	[X] (Maxim) Implement placing functionality
 		-The player can place the ingredients back on the shelf
 		-You can use the "InventoryManager.remove_item" function to remove the items from the player inventory
 
-	[ ] (Maxim) Implement visible counter for the number of ingredients in the shelf
+	[X] (Maxim) Implement visible counter for the number of ingredients in the shelf
 		-Using a text label seems to be the easiest option
 
 [] (Eemeli) Implement the cauldron
