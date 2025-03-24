@@ -70,11 +70,10 @@ Project Task List:
 
 [ ] (Oskari) Implement a day-night cycle
 	
-	[ ] (Oskari) Create any kind of time-tracking system
+	[X] (Oskari) Create any kind of time-tracking system
 		-Internally represent "time of day" or "day progress" as a real number from 0 to 1, inclusive
 		-Increase the current time during each simulation tick
 		-Create a rudimentary display of the current time, simply printing the value will do
-		-Day progress is a global attribute, can be read
 
 	[ ] (Oskari) Create a Bed interactable
 		-There is a "can go to sleep" threshold
