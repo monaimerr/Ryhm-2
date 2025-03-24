@@ -25,12 +25,12 @@ func _on_interact():
 	if item_count > 0:
 		if InventoryManager.add_item(item):
 			item_count = item_count - 1
-			print(item_count)
+			#print(item_count)
 			count_label.text = str(item_count)
 		
 
 func _on_interact2():
 	if InventoryManager.remove_item(item):
 		item_count = item_count + 1
-		print(item_count)
+		#print(item_count)
 		count_label.text = str(item_count)

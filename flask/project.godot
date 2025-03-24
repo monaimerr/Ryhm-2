@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Flask"
-run/main_scene="uid://chvypg251s4aw"
+run/main_scene="uid://bu7k8lr3kjh0n"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0.14902, 0.0470588, 0.141176, 1)
 config/icon="res://art/icon.svg"
 
 [autoload]
@@ -83,3 +84,7 @@ interact={
 [physics]
 
 common/physics_interpolation=true
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.14902, 0.0470588, 0.141176, 1)

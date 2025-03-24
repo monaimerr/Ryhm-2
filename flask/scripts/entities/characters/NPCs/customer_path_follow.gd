@@ -4,6 +4,7 @@ extends PathFollow2D
 @export var moveBy = 150
 @onready var timer = $Customer/WaitTimer
 
+
 func _ready() -> void:
 	timer.timeout.connect(customer_timeout)
 	
@@ -11,7 +12,7 @@ func _process(delta: float) -> void:
 	if customer.canMove:
 		move_customer(delta)
 	if progress_ratio >= 1:
-		print("queue free")
+		print("Customer deleted")
 		queue_free()
 	
 func move_customer(delta):

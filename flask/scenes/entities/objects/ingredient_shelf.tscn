@@ -3,26 +3,31 @@
 [ext_resource type="Script" uid="uid://bf8jmba18y7ug" path="res://scripts/entities/objects/ingredient shelf/ingredients_shelf.gd" id="1_n20qf"]
 [ext_resource type="Resource" uid="uid://doiygj6sei8aq" path="res://resources/items/ingredients/test_ingredient.tres" id="2_d66vj"]
 [ext_resource type="PackedScene" uid="uid://b1keub3h102q6" path="res://scenes/interaction/interaction_area.tscn" id="2_l0nur"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="3_57ks4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l0nur"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vy5sb"]
-size = Vector2(512, 256)
+size = Vector2(485, 243)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hmms1"]
-size = Vector2(576, 320)
+size = Vector2(537, 355)
 
 [sub_resource type="LabelSettings" id="LabelSettings_d66vj"]
-font_size = 25
+font_size = 50
+font_color = Color(0, 0, 0, 1)
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
 [node name="IngredientShelf" type="StaticBody2D"]
 script = ExtResource("1_n20qf")
 item = ExtResource("2_d66vj")
-texture = ExtResource("3_57ks4")
+item_count = 10
+texture = SubResource("PlaceholderTexture2D_l0nur")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_vy5sb")
+debug_color = Color(0.940823, 0.231442, 0.202422, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
@@ -30,13 +35,14 @@ shape = SubResource("RectangleShape2D_vy5sb")
 interact_name = "[E] Get item, [R] return item"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-0.5, 39.5)
 shape = SubResource("RectangleShape2D_hmms1")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -56.0
-offset_top = -200.0
-offset_right = 56.0
-offset_bottom = -160.0
+z_index = 1
+offset_left = 98.0
+offset_top = -69.0
+offset_right = 210.0
 label_settings = SubResource("LabelSettings_d66vj")
 horizontal_alignment = 1
 vertical_alignment = 1

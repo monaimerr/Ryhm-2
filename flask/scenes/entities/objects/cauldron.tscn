@@ -5,24 +5,31 @@
 [ext_resource type="Texture2D" uid="uid://4hj7nb0ln3f8" path="res://art/tilemap.png" id="2_coud1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_13v4b"]
+size = Vector2(454.5, 422)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cpmy"]
-size = Vector2(100, 100)
+size = Vector2(158.438, 146.125)
 
 [node name="Cauldron" type="StaticBody2D"]
 script = ExtResource("1_v4qvh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0)
 shape = SubResource("RectangleShape2D_13v4b")
+debug_color = Color(0.937775, 0.22257, 0.297979, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.2, 0.2)
+visible = false
+position = Vector2(-6.67572e-06, -0.500014)
+scale = Vector2(0.56917, 0.57002)
 texture = ExtResource("2_coud1")
 region_enabled = true
 region_rect = Rect2(620.947, 6.28149, 506.728, 507.45)
 
 [node name="Interactable" parent="." instance=ExtResource("2_13v4b")]
+interact_name = "[E] to Interact"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-1, -2)
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_5cpmy")

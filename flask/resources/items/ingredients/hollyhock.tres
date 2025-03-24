@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_ojbov"]
 [ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_fsfvu"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n310n"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojbov"]
 atlas = ExtResource("2_fsfvu")
 region = Rect2(400, 0, 100, 100)
 
@@ -11,5 +11,5 @@ region = Rect2(400, 0, 100, 100)
 script = ExtResource("1_ojbov")
 type = 0
 name = "Hollyhock"
-texture = SubResource("AtlasTexture_n310n")
+texture = SubResource("AtlasTexture_ojbov")
 metadata/_custom_type_script = "uid://b16jyki4v2h55"
