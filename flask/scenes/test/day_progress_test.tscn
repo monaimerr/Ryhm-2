@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dec5yq6glp2d6"]
+
+[ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_603ei"]
+[ext_resource type="Script" uid="uid://b13b1n0pk78n1" path="res://scripts/test/day_progress_test.gd" id="1_mrdk3"]
+[ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="2_syrhg"]
+[ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="3_mrdk3"]
+[ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="4_syrhg"]
+
+[node name="TestScene" type="Node2D"]
+script = ExtResource("1_mrdk3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -5840.0
+offset_top = -3749.0
+offset_right = 7242.0
+offset_bottom = 3897.0
+color = Color(0.149011, 0.0458664, 0.141157, 1)
+
+[node name="game_level" parent="." instance=ExtResource("1_603ei")]
+scale = Vector2(0.4, 0.4)
+
+[node name="player" parent="." instance=ExtResource("2_syrhg")]
+z_index = 1
+position = Vector2(-171, 436)
+scale = Vector2(0.8, 0.8)
+speed = 475
+
+[node name="PlayerCamera" type="Camera2D" parent="player"]
+position = Vector2(1.25, 0)
+zoom = Vector2(0.6, 0.6)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource("3_mrdk3")]
+offset_left = 153.0
+offset_top = 76.0
+offset_right = 153.0
+offset_bottom = 76.0
+
+[node name="DayProgressDisplay" type="Label" parent="CanvasLayer"]
+offset_right = 399.0
+offset_bottom = 134.0
+text = "t"
+
+[node name="DayProgressManager" parent="." instance=ExtResource("4_syrhg")]

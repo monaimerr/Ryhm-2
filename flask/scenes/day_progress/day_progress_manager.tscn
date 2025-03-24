@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgmqg8hxcsmmt"]
+
+[ext_resource type="Script" uid="uid://cpsykhud3w1h1" path="res://scripts/day_progress/day_progress_manager.gd" id="1_q6pg2"]
+
+[node name="DayProgressManager" type="Node"]
+script = ExtResource("1_q6pg2")
+
+[node name="Timer" type="Timer" parent="."]
