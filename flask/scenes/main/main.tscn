@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=9 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://dn1tkkyqgwunq" path="res://scenes/entities/objects/test_object.tscn" id="2_6q06x"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://clx5pfo6e6oah" path="res://scenes/entities/objects/test_object_2.tscn" id="4_hujxm"]
 [ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="4_ow5a4"]
 [ext_resource type="PackedScene" uid="uid://blmjpbbqnu2ra" path="res://scenes/entities/objects/ingredient_shelf.tscn" id="5_6q06x"]
+[ext_resource type="Resource" uid="uid://cocyu7i1qou6" path="res://resources/items/ingredients/hollyhock.tres" id="6_hujxm"]
+[ext_resource type="Resource" uid="uid://bcdylw0ingc47" path="res://resources/items/ingredients/lavender.tres" id="8_yyfjg"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_l3cfh")
@@ -17,13 +19,19 @@ position = Vector2(774, 167)
 position = Vector2(192, 128)
 
 [node name="TestObject2" parent="." instance=ExtResource("4_hujxm")]
-position = Vector2(1219, 392)
+position = Vector2(1256, 287)
 
 [node name="IngredientShelf" parent="." instance=ExtResource("5_6q06x")]
 position = Vector2(378, 626)
+item = ExtResource("6_hujxm")
+item_count = 11
 
 [node name="Inventory" parent="." instance=ExtResource("4_ow5a4")]
 offset_left = 1250.0
 offset_top = 22.0
 offset_right = 1250.0
 offset_bottom = 22.0
+
+[node name="IngredientShelf2" parent="." instance=ExtResource("5_6q06x")]
+position = Vector2(1171, 623)
+item = ExtResource("8_yyfjg")

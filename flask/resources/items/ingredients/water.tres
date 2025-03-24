@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://dir4rvtkb8uei"]
+
+[ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_smimn"]
+[ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_fxkgv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ntjp"]
+atlas = ExtResource("2_fxkgv")
+region = Rect2(0, 100, 100, 100)
+
+[resource]
+script = ExtResource("1_smimn")
+type = 0
+name = "Water"
+texture = SubResource("AtlasTexture_8ntjp")
+metadata/_custom_type_script = "uid://b16jyki4v2h55"

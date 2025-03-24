@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://chf0lrmjp4q24"]
+
+[ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_le6nn"]
+[ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_ayfao"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnlfw"]
+atlas = ExtResource("2_ayfao")
+region = Rect2(200, 200, 100, 100)
+
+[resource]
+script = ExtResource("1_le6nn")
+type = 0
+name = "Dawn light dust"
+texture = SubResource("AtlasTexture_dnlfw")
+metadata/_custom_type_script = "uid://b16jyki4v2h55"

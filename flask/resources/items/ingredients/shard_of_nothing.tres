@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://ohpw0e7jts55"]
+
+[ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_1rojc"]
+[ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_74nwa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q115f"]
+atlas = ExtResource("2_74nwa")
+region = Rect2(0, 200, 100, 100)
+
+[resource]
+script = ExtResource("1_1rojc")
+type = 0
+name = "Shard of Nothing"
+texture = SubResource("AtlasTexture_q115f")
+metadata/_custom_type_script = "uid://b16jyki4v2h55"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://bq0vknnoeyhye"]
+
+[ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_20hyf"]
+[ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_61sew"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8huif"]
+atlas = ExtResource("2_61sew")
+region = Rect2(0, 300, 100, 100)
+
+[resource]
+script = ExtResource("1_20hyf")
+type = 1
+name = "Potion of Ill intent"
+texture = SubResource("AtlasTexture_8huif")
+metadata/_custom_type_script = "uid://b16jyki4v2h55"

@@ -11,11 +11,7 @@ extends StaticBody2D
 @export var item: Item
 @export var item_count: int = 3
 @export var texture: Texture2D
-
-var player_item_count: int = 0
-
 @onready var sprite_2d: Sprite2D = $Sprite2D
-
 
 
 func _ready() -> void:
@@ -26,20 +22,15 @@ func _ready() -> void:
 	
 
 func _on_interact():
-	
-	if item.type == Item.Type.INGREDIENT and item_count > 0:
-		InventoryManager.add_item(item)
-		item_count = item_count - 1
-		player_item_count = player_item_count + 1
-		print(item_count)
-		count_label.text = str(item_count)
+	if item_count > 0:
+		if InventoryManager.add_item(item):
+			item_count = item_count - 1
+			print(item_count)
+			count_label.text = str(item_count)
 		
 
 func _on_interact2():
-	
-	if item.type == Item.Type.INGREDIENT and player_item_count > 0:
-		InventoryManager.remove_item(item)
+	if InventoryManager.remove_item(item):
 		item_count = item_count + 1
-		player_item_count = player_item_count - 1
 		print(item_count)
 		count_label.text = str(item_count)
