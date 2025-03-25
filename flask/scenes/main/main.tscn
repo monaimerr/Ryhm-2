@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bu7k8lr3kjh0n"]
+[gd_scene load_steps=25 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="2_o0ihb"]
@@ -20,7 +20,7 @@
 [ext_resource type="Resource" uid="uid://d38v75kp6eqn2" path="res://resources/items/ingredients/shard_of_space.tres" id="15_62atk"]
 [ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="17_necax"]
 [ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
-[ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
+[ext_resource type="Script" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
 
