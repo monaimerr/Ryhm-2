@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=27 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
+[ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="2_o0ihb"]
 [ext_resource type="Resource" uid="uid://dir4rvtkb8uei" path="res://resources/items/ingredients/water.tres" id="3_6q06x"]
 [ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="3_dxjet"]
@@ -21,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="17_necax"]
 [ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
 [ext_resource type="Script" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
+[ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="22_m4h2d"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
 
@@ -34,6 +36,7 @@ _data = {
 point_count = 3
 
 [node name="Main" type="Node"]
+script = ExtResource("1_p8abn")
 
 [node name="game_level" parent="." instance=ExtResource("1_ae60x")]
 scale = Vector2(0.4, 0.4)
@@ -139,6 +142,8 @@ metadata/_edit_group_ = true
 [node name="CustomerSpawnTimer" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
+[node name="DayProgressManager" parent="." instance=ExtResource("22_m4h2d")]
 
 [connection signal="shop_opened_status_changed" from="game_level/OpenSign" to="CustomerPath" method="_on_open_sign_shop_opened_status_changed"]
 [connection signal="timeout" from="CustomerSpawnTimer" to="CustomerPath" method="_on_customer_spawn_timer_timeout"]
