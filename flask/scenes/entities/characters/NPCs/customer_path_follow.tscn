@@ -1,19 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://duyo58ap5vswk"]
+[gd_scene load_steps=3 format=3 uid="uid://duyo58ap5vswk"]
 
 [ext_resource type="Script" uid="uid://3nkiv502miml" path="res://scripts/entities/characters/NPCs/customer_path_follow.gd" id="1_5awvs"]
 [ext_resource type="PackedScene" uid="uid://cw3477t4v07bx" path="res://scenes/entities/characters/NPCs/customer.tscn" id="1_fjnjl"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_5awvs"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_6cfik"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_5awvs")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="CustomerPathFollow" type="PathFollow2D"]
 y_sort_enabled = true
@@ -26,7 +14,6 @@ script = ExtResource("1_5awvs")
 [node name="Customer" parent="." instance=ExtResource("1_fjnjl")]
 visible = false
 rotation = 1.5708
-spriteFrames = SubResource("SpriteFrames_6cfik")
 
 [node name="ToggleVisibility" type="Timer" parent="."]
 wait_time = 0.5

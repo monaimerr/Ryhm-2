@@ -4,14 +4,17 @@ extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @export var spriteFrames: SpriteFrames
 @export var canMove = true
+@export var potionRequest: AtlasTexture
 @onready var wait_timer: Timer = $WaitTimer
 @onready var collision_shape_2d: CollisionShape2D = $Blocked/CollisionShape2D
 @onready var interaction_collision: CollisionShape2D = $Interactable/CollisionShape2D
 @onready var wait_time_progress_bar: ProgressBar = $WaitTimeProgressBar
+@onready var speech_bubble: Sprite2D = $SpeechBubble
 
 
 func _ready() -> void:
 	animated_sprite_2d.sprite_frames = spriteFrames
+	speech_bubble.texture = potionRequest
 	interactable.interact = _on_interact
 	interactable.is_interactable = false
 
@@ -39,10 +42,13 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	#print("area entered")
 	canMove = false
 	interactable.is_interactable = true
+	speech_bubble.show()
 	
 
 func _on_area_2d_area_exited(area: Area2D) -> void:
 	canMove = true
+	speech_bubble.hide()
+	
 
 
 func _on_wait_timer_timeout() -> void:
