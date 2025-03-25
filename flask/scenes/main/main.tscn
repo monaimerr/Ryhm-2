@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bu7k8lr3kjh0n"]
+[gd_scene load_steps=25 format=3 uid="uid://bu7k8lr3kjh0n"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="2_o0ihb"]
@@ -19,6 +19,7 @@
 [ext_resource type="Resource" uid="uid://ohpw0e7jts55" path="res://resources/items/ingredients/shard_of_nothing.tres" id="14_0bhws"]
 [ext_resource type="Resource" uid="uid://d38v75kp6eqn2" path="res://resources/items/ingredients/shard_of_space.tres" id="15_62atk"]
 [ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="17_necax"]
+[ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
 [ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
@@ -40,7 +41,6 @@ scale = Vector2(0.4, 0.4)
 [node name="Cauldron" parent="game_level" instance=ExtResource("17_necax")]
 z_index = 1
 position = Vector2(4382.5, 1810)
-scale = Vector2(1, 1)
 
 [node name="WaterShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(2602.5, 817.5)
@@ -103,8 +103,10 @@ item = ExtResource("6_hujxm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="game_level/CounterArea2D"]
 position = Vector2(1100, 1390)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pg34l")
+
+[node name="OpenSign" parent="game_level" instance=ExtResource("18_pg34l")]
+position = Vector2(1925, 1997.5)
 
 [node name="player" parent="." instance=ExtResource("2_o0ihb")]
 z_index = 1
@@ -137,4 +139,5 @@ metadata/_edit_group_ = true
 wait_time = 5.0
 autostart = true
 
+[connection signal="shop_opened_status_changed" from="game_level/OpenSign" to="CustomerPath" method="_on_open_sign_shop_opened_status_changed"]
 [connection signal="timeout" from="CustomerSpawnTimer" to="CustomerPath" method="_on_customer_spawn_timer_timeout"]
