@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://d38v75kp6eqn2" path="res://resources/items/ingredients/shard_of_space.tres" id="15_62atk"]
 [ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="17_necax"]
 [ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
-[ext_resource type="Script" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
+[ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 [ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="22_m4h2d"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]

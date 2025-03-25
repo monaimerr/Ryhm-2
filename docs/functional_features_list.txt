@@ -4,9 +4,9 @@ Player character
 [X] Player character can move around the map.
 
 Interaction with objects
-[] Player can take items to their inventory.
+[X] Player can take items to their inventory.
 [] Player can use items from their inventory to make potions.
-[] Player can put items back to shelves.
+[X] Player can put items back to shelves.
 [] Player can remove an item from their inventory via trashcan.
 
 Customers
