@@ -13,6 +13,7 @@ func _ready() -> void:
 func _reached_end_of_day() -> void:
 	elapsedSeconds = DAY_LENGTH_IN_SECONDS
 	secondTimer.stop()
+	time_advanced.emit(get_day_progress())
 	day_over.emit()
 
 func _second_timer_timeout() -> void:
@@ -37,5 +38,4 @@ func start_day() -> void:
 func end_day_early() -> void:
 	if !is_day_over():
 		_reached_end_of_day()
-		time_advanced.emit(get_day_progress())
 		
