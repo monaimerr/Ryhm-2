@@ -1,33 +1,51 @@
-[gd_scene load_steps=6 format=3 uid="uid://c2xenh7dy44e0"]
+[gd_scene load_steps=8 format=3 uid="uid://c2xenh7dy44e0"]
 
 [ext_resource type="Script" uid="uid://7b2vqdd5f7ck" path="res://scripts/entities/objects/open_sign.gd" id="1_aju14"]
 [ext_resource type="PackedScene" uid="uid://b1keub3h102q6" path="res://scenes/interaction/interaction_area.tscn" id="1_y8vd5"]
-[ext_resource type="Texture2D" uid="uid://cyp6ptlwrgc78" path="res://art/icon.svg" id="2_aju14"]
+[ext_resource type="Texture2D" uid="uid://din8jm4jksovf" path="res://art/components_for_customer_service.png" id="3_aju14"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_numf2"]
-size = Vector2(260.5, 266.5)
+size = Vector2(404, 381.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4imkt"]
-size = Vector2(184, 181)
+[sub_resource type="AtlasTexture" id="AtlasTexture_numf2"]
+atlas = ExtResource("3_aju14")
+region = Rect2(0, 0, 300, 300)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4imkt"]
+atlas = ExtResource("3_aju14")
+region = Rect2(300, 0, 300, 300)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ml2eb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_numf2")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4imkt")
+}],
+"loop": true,
+"name": &"open",
+"speed": 5.0
+}]
 
 [node name="OpenSign" type="Node2D"]
 script = ExtResource("1_aju14")
 
 [node name="Interactable" parent="." instance=ExtResource("1_y8vd5")]
-interact_name = "[E] to interact"
+interact_name = "[E] to open the shop"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(-2.75, -50.75)
+position = Vector2(0, -150)
 shape = SubResource("RectangleShape2D_numf2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-0.499999, -17.4687)
 scale = Vector2(1.39844, 1.3208)
-texture = ExtResource("2_aju14")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, -16)
-shape = SubResource("RectangleShape2D_4imkt")
-debug_color = Color(0.912845, 0.276706, 0.255932, 0.42)
+sprite_frames = SubResource("SpriteFrames_ml2eb")
+animation = &"closed"

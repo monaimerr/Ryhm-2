@@ -106,7 +106,8 @@ position = Vector2(1100, 1390)
 shape = SubResource("RectangleShape2D_pg34l")
 
 [node name="OpenSign" parent="game_level" instance=ExtResource("18_pg34l")]
-position = Vector2(1925, 1997.5)
+position = Vector2(1960, 2250)
+scale = Vector2(0.9, 0.9)
 
 [node name="player" parent="." instance=ExtResource("2_o0ihb")]
 z_index = 1
