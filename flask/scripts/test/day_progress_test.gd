@@ -6,5 +6,6 @@ func _ready() -> void:
 
 
 func _update_day_progress_display(time: float) -> void:
+	var label = $CanvasLayer/DayProgressDisplay
 	var newText = "Time of Day: %0.2f" % (time * $DayProgressManager.get_day_length())
-	$CanvasLayer/DayProgressDisplay.text = newText
+	label.text = newText
