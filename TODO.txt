@@ -2,8 +2,7 @@ Project Task List:
 [ ] (Oskari) Schedule the project
 	[X] (Oskari) Ask the teacher, confirm the presentation date (2025-04-02?)
 	[X] (Oskari) Write guide for merge conflict resolution
-	[ ] (Oskari) Plan work-week 12
-	[ ] (Oskari) Plan work-week 13
+	[ ] (Oskari) Write existing informal process down
 
 [X] (Otto) Organize Godot directory 
 	[X] () Document organization

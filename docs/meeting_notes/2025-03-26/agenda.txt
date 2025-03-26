@@ -1,0 +1,104 @@
+2025-03-26 1300 (1pm) General Meeting
+
+- Denis excused from the meeting
+
+* 9-10 days since last general meeting
+- Direction and speed of development
+	- 'work week' is over, what have we achieved?
+		- What did we set out to achieve?
+		* nothing is specific...
+		- What have we not achieved?
+		* Otto
+    		* The basic gameplay loop isn't there yet...
+    		* We'll get there though
+	- Should we specifically decide to write down goals and verify them?
+		* Oskari: "it's nice to have 'units' of completion"
+		* Otto: Well we do actually, the functional features list
+		* Oskari: Yeah that'll work
+		* Otto: I can keep it up to date myself
+		* Otto: lots of features we don't have time for
+		* Matilda: I'll update it
+		* Otto: changes to requirements since we're short on time
+	- Then, given the remaining time, what can we achieve?
+		- What's in the backlog? What shall we select?
+		* Let's write an explicit separate document!
+		* Oskari: we misprioritized, "day-night cycle" and "open/close shop"
+	- Evaporation of specific procedure?
+		- Oskari feels "uncertain" and "without mechanism"
+		- Should we "codify" or at least document the current procedure?
+		* Oskari: I realized it's a little pointless to ask
+		* Oskari: anything needs changing?
+		* Maxim: No
+		* Oskari: Ok I'll write down what we currently do
+
+- Course Project Retrospection
+	- Success criteria
+		- One success criterion of a system is "behaves as defined" but we have no definitions
+		* "Without obvious bugs"
+		* "It's not a bug it's a feature!"
+	- Oskari will compile final report
+		* Oskari got the impression from the Lecturer's video that the report should be a written-down document
+		* Include at least some game screenshots or showcase material
+		* Is there a code review?
+		* Oskari: The assessed item is not the product but the procedure
+		* Maxim: So we didn't need to do anything? xddd
+		* Oskari: They probably don't care about the "product" but "the verification of product requirements"
+	- Have we achieved the requirements?
+		* This is too early, let's review in the final general meeting
+	- Do we have too many people?
+		* Just to get feedback
+		- Some people have a job they're good at and contribute a lot
+		- Others not so much?
+		* Mounaim: Well no, we weren't given that many tasks...
+		* Eemeli: Yeah, same, the workload hasn't been equally balanced
+		* Eemeli: Difficult to perfectly balance anyway
+		* Oskari: A lot of time weas spent on learning tools instead of developing
+	- What have we learned?
+		* more feedback
+		Oskari:
+    		- Oskari at least learned to respect software development methodologies
+				* I thought I'd go in "figure it out meanwhile"
+				* Otto: It's been difficult
+    		- Oskari also learned to note the training and experience of team members
+				* Discomfort of "Am I doing this right?"
+				* Time spent learning tools
+		Eemeli:
+			* Git from the commandline was new for me, the guide Oskari made helped a lot
+			* Godot environment itself, I was sceptical but it turned out nice
+			* Group work: Planning in a team, meetings, requirements, and so on
+		Maxim:
+			* I've learned a lot about Godot
+			* I learned about git, specifically on the commandline
+			* Software development process overall has been more educational this course than the previous software development course
+				* Hierarchies good?
+				* On the previous we were following orders, this time we had to think more
+				* Oskari's issues with designing the process was educational
+		Mounaim:
+			* Newest thing was Godot environment
+			* Our task management was professional
+		Otto:
+			* Mostly about software project processes
+    			* The management is a lot harder than programming
+				* Leadership and managing is difficult, frustrating
+			* Godot too, I had to familiarize myself more with it because I was designated "the expert"
+			* Git was confusing, but the guides helped
+		Matilda:
+			* I've been mostly doing drawing, so learned about tile grids, game art, sprites
+			* A little about git and Godot
+			* Creating requirements
+			* Process of creating a bigger project coordinating people
+
+- Negotiating next meeting time
+	- Next weekend, or next wednesday?
+	* Tighter coordination, or continue as usual? 
+	* Wednesday 1pm not okay for Maxim
+	* Maxim: Sunday ok, Monday not so much
+	* Eemeli: Sunday 12-15 OK
+	* Mounaim: Sunday 12 OK
+	* Otto: OK
+	* Matilda: OK
+	* Maxim: 1pm would be preferrable
+	* OK: Otto, Matilda, Eemeli, Mounaim
+	! General Meeting 2025-03-30 Sunday 1300
+- Setting up work sessions
+
