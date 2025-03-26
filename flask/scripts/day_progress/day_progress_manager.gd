@@ -3,7 +3,7 @@ extends Node
 signal time_advanced(day_progress: float)
 signal day_over
 
-var DAY_LENGTH_IN_SECONDS: int = 5
+@export var DAY_LENGTH_IN_SECONDS: int = 5
 var elapsedSeconds: int = 0
 @onready var secondTimer: Timer = $Timer
 

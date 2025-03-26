@@ -67,7 +67,7 @@ Project Task List:
 		-The customers can be interacted with, which brings up a dialog window (dialog will be implemented later)
 		-The customer scene needs to be generic so instanciating different looking customers will be easier
 
-[] (Otto) Implement successful sales to a customer
+[X] (Otto) Implement successful sales to a customer
     	-If the player has a particular potion in their inventory, remove the potion and give the player money
 
 [ ] (Oskari) Implement a day-night cycle

@@ -20,8 +20,9 @@ func _process(delta: float) -> void:
 		queue_free()
 	
 func move_customer(delta):
+	var old_y = global_position.y
 	progress += moveBy * delta
-	if progress_ratio > 0.55:
+	if global_position.y > old_y:
 		customerAnimatedSprite.animation = "front"
 	
 	
