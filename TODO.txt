@@ -67,6 +67,9 @@ Project Task List:
 		-The customers can be interacted with, which brings up a dialog window (dialog will be implemented later)
 		-The customer scene needs to be generic so instanciating different looking customers will be easier
 
+[] (Otto) Implement successful sales to a customer
+    	-If the player has a particular potion in their inventory, remove the potion and give the player money
+
 [ ] (Oskari) Implement a day-night cycle
 	
 	[X] (Oskari) Create any kind of time-tracking system
@@ -85,6 +88,8 @@ Project Task List:
 
 	[ ] (Oskari) Create a night-to-morning transition effect
 		-Resets the "day progress", to be activated by bed interaction
+	
+	[ ] (Oskari) Track the number of times the player has slept, show it to the player
 
 [] (Mounaim) Implement the trash can
 		-The player can remove any potions they don't need from their inventory by interacting with the trash can
@@ -100,3 +105,13 @@ Project Task List:
 [] (Otto) Improve the inventory UI
 		-The inventory should be toggleable 
 		-The inventory should more closely match the original concept art
+
+[] () Implement a money counter for the player and allow the player to gain and spend money
+	-Some variable to track amount of money, a function for adding money, and a function for attempting to spend money (true/false for success/failure)
+	-Global Node like InventoryManager
+
+[] (Matilda, Maxim) Choose and Implement Sound Effects for various in-game events
+
+	[] (Matilda) Write down choices of sound effects for various in-game events
+
+	[] (Maxim) Implement sound effects in in-game events
