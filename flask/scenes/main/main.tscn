@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=28 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
 [ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 [ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="22_m4h2d"]
+[ext_resource type="PackedScene" uid="uid://c61x4ibg3v35p" path="res://scenes/Trash_can/Trash_Can.tscn" id="24_s17dp"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
 
@@ -148,6 +149,9 @@ autostart = true
 
 [node name="DayProgressManager" parent="." instance=ExtResource("22_m4h2d")]
 DAY_LENGTH_IN_SECONDS = 60
+
+[node name="TrashCan" parent="." instance=ExtResource("24_s17dp")]
+position = Vector2(1117, 781)
 
 [connection signal="shop_opened_status_changed" from="game_level/OpenSign" to="CustomerPath" method="_on_open_sign_shop_opened_status_changed"]
 [connection signal="timeout" from="CustomerSpawnTimer" to="CustomerPath" method="_on_customer_spawn_timer_timeout"]
