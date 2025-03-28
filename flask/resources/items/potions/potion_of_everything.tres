@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" load_steps=4 format=3 uid="uid://cgnuedvvcr2cs"]
 
-[ext_resource type="Script" uid="uid://b16jyki4v2h55" path="res://resources/item.gd" id="1_8wm0q"]
+[ext_resource type="Script" path="res://resources/item.gd" id="1_8wm0q"]
 [ext_resource type="Texture2D" uid="uid://ih3t3ftjn5jt" path="res://art/items.png" id="2_6ffuf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7eto"]
@@ -12,4 +12,3 @@ script = ExtResource("1_8wm0q")
 type = 1
 name = "Potion of Everything"
 texture = SubResource("AtlasTexture_y7eto")
-metadata/_custom_type_script = "uid://b16jyki4v2h55"
