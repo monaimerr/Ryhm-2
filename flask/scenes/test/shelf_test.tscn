@@ -1,6 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=8 format=3 uid="uid://b1kgo5jsbegj3"]
 
-[ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_g2yq4"]
 [ext_resource type="PackedScene" uid="uid://dn1tkkyqgwunq" path="res://scenes/entities/objects/test_object.tscn" id="2_5j3cn"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="3_h2ha6"]
 [ext_resource type="PackedScene" uid="uid://clx5pfo6e6oah" path="res://scenes/entities/objects/test_object_2.tscn" id="4_elrj4"]
@@ -10,7 +9,6 @@
 [ext_resource type="Resource" uid="uid://bcdylw0ingc47" path="res://resources/items/ingredients/lavender.tres" id="8_i6rd2"]
 
 [node name="ShelfTest" type="Node"]
-script = ExtResource("1_g2yq4")
 
 [node name="TestObject" parent="." instance=ExtResource("2_5j3cn")]
 position = Vector2(774, 167)
