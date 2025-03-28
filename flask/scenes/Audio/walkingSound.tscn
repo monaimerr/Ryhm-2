@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqs6af6le0g4i"]
+
+[ext_resource type="AudioStream" uid="uid://bpv4ahrw1dcyf" path="res://art/step1.mp3" id="1_iw2md"]
+[ext_resource type="AudioStream" uid="uid://c3ci76vswhsi6" path="res://art/step2.mp3" id="2_m63i2"]
+[ext_resource type="AudioStream" uid="uid://cqly4o82myxd3" path="res://art/step3.mp3" id="3_gogxc"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_8532d"]
+stream_count = 3
+stream_0 = ExtResource("1_iw2md")
+stream_1 = ExtResource("2_m63i2")
+stream_2 = ExtResource("3_gogxc")
+
+[node name="WalkingSound" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamPlaylist_8532d")

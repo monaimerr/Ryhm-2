@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=9 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://dn1tkkyqgwunq" path="res://scenes/entities/objects/test_object.tscn" id="2_5j3cn"]
 [ext_resource type="PackedScene" uid="uid://burv151ryj8af" path="res://scenes/entities/characters/player/player.tscn" id="3_h2ha6"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://blmjpbbqnu2ra" path="res://scenes/entities/objects/ingredient_shelf.tscn" id="5_mn55r"]
 [ext_resource type="Resource" uid="uid://cocyu7i1qou6" path="res://resources/items/ingredients/hollyhock.tres" id="6_23fig"]
 [ext_resource type="PackedScene" uid="uid://bf1qppornvxyf" path="res://scenes/UI/inventory/inventory.tscn" id="7_jwc4a"]
+[ext_resource type="PackedScene" uid="uid://8y0ru2c414t0" path="res://scenes/Audio/musicTheme.tscn" id="8_g2yq4"]
 [ext_resource type="Resource" uid="uid://bcdylw0ingc47" path="res://resources/items/ingredients/lavender.tres" id="8_i6rd2"]
 
 [node name="ShelfTest" type="Node"]
@@ -15,6 +16,10 @@ position = Vector2(774, 167)
 
 [node name="player" parent="." instance=ExtResource("3_h2ha6")]
 position = Vector2(192, 128)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+
+[node name="MainTheme" parent="player" instance=ExtResource("8_g2yq4")]
 
 [node name="TestObject2" parent="." instance=ExtResource("4_elrj4")]
 position = Vector2(1256, 287)

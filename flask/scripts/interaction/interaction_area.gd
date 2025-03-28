@@ -13,3 +13,6 @@ var interact: Callable = func():
 
 var interact2: Callable = func():
 	pass
+
+var interact3: Callable = func():
+	pass
