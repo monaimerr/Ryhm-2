@@ -77,17 +77,18 @@ Project Task List:
 		-Increase the current time during each simulation tick
 		-Create a rudimentary display of the current time, simply printing the value will do
 
-	[ ] (Oskari) Create a Bed interactable
+	[X] (Oskari) Create a Bed interactable
 		-There is a "can go to sleep" threshold
 		-If the day progress is below the "can go to sleep" threshold, and the player interacts with the bed, inform the player that it is too soon to go to sleep
 		-If the day progress is above the "can go to sleep" threshold, and the player interacts with the bed, trigger an effect
 
+
+	[X] (Oskari) Create a night-to-morning transition effect
+		-Resets the "day progress", to be activated by bed interaction
+
 	[ ] (Oskari) Add "daytime events" to time-tracking system
 		-A list of (time, function) tuples, triggers `function` at `time`
 		-The list is static, cannot be changed during runtime (K.I.S.S.)
-
-	[ ] (Oskari) Create a night-to-morning transition effect
-		-Resets the "day progress", to be activated by bed interaction
 	
 	[ ] (Oskari) Track the number of times the player has slept, show it to the player
 
