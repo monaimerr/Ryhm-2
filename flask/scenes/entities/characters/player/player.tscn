@@ -1,8 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://burv151ryj8af"]
+[gd_scene load_steps=16 format=3 uid="uid://burv151ryj8af"]
 
 [ext_resource type="Script" uid="uid://cba6cx1tc2m4u" path="res://scripts/entities/characters/player/player.gd" id="1_wpmom"]
 [ext_resource type="Texture2D" uid="uid://6c168n3wx3ok" path="res://art/witch_sprites.png" id="2_620ub"]
 [ext_resource type="PackedScene" uid="uid://jgin8edvjbbq" path="res://scenes/interaction/interacting_component.tscn" id="3_08wh6"]
+[ext_resource type="PackedScene" uid="uid://bqs6af6le0g4i" path="res://scenes/Audio/walkingSound.tscn" id="4_nrr0s"]
+[ext_resource type="PackedScene" uid="uid://8y0ru2c414t0" path="res://scenes/Audio/musicTheme.tscn" id="5_ba871"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nrr0s"]
 atlas = ExtResource("2_620ub")
@@ -101,3 +103,9 @@ shape = SubResource("CapsuleShape2D_d1hxy")
 debug_color = Color(0.871055, 0.317852, 0.386885, 0.42)
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_08wh6")]
+
+[node name="WalkingSound" parent="." instance=ExtResource("4_nrr0s")]
+
+[node name="MusicTheme" parent="." instance=ExtResource("5_ba871")]
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="WalkingSound" method="_on_animated_sprite_2d_animation_looped"]
