@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="PotionRequest" load_steps=4 format=3 uid="uid://bjbgvnk4ykwai"]
 
 [ext_resource type="Resource" uid="uid://coi55bypfaglu" path="res://resources/items/potions/potion_of_healing.tres" id="1_ph5ws"]
-[ext_resource type="Script" uid="uid://baxg0mxfusu3a" path="res://resources/potion_request.gd" id="2_y6aub"]
+[ext_resource type="Script" path="res://resources/potion_request.gd" id="2_y6aub"]
 [ext_resource type="Texture2D" uid="uid://bb5p7exgdgetk" path="res://resources/request_speech_bubbles/healing.tres" id="3_x13bk"]
 
 [resource]

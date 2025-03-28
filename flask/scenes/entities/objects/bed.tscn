@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://lhiyyt452wqb"]
+
+[ext_resource type="Script" uid="uid://d3l2x5doyfmmo" path="res://scripts/entities/objects/bed.gd" id="1_07obs"]
+[ext_resource type="PackedScene" uid="uid://b1keub3h102q6" path="res://scenes/interaction/interaction_area.tscn" id="1_jjas7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07obs"]
+size = Vector2(267, 368)
+
+[node name="Bed" type="Node2D"]
+script = ExtResource("1_07obs")
+
+[node name="Interactable" parent="." instance=ExtResource("1_jjas7")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, -1.52588e-05)
+scale = Vector2(1, 0.972934)
+shape = SubResource("RectangleShape2D_07obs")

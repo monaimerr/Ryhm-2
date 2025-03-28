@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=29 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
@@ -21,6 +21,7 @@
 [ext_resource type="Resource" uid="uid://d38v75kp6eqn2" path="res://resources/items/ingredients/shard_of_space.tres" id="15_62atk"]
 [ext_resource type="PackedScene" uid="uid://u8dknx7yj2p2" path="res://scenes/entities/objects/cauldron.tscn" id="17_necax"]
 [ext_resource type="PackedScene" uid="uid://c2xenh7dy44e0" path="res://scenes/entities/objects/open_sign.tscn" id="18_pg34l"]
+[ext_resource type="PackedScene" uid="uid://lhiyyt452wqb" path="res://scenes/entities/objects/bed.tscn" id="20_37hlw"]
 [ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 [ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="22_m4h2d"]
 [ext_resource type="PackedScene" uid="uid://c61x4ibg3v35p" path="res://scenes/Trash_can/Trash_Can.tscn" id="24_s17dp"]
@@ -109,12 +110,15 @@ collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="game_level/CounterArea2D"]
 position = Vector2(1100, 1352.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pg34l")
 
 [node name="OpenSign" parent="game_level" instance=ExtResource("18_pg34l")]
 position = Vector2(1960, 2250)
 scale = Vector2(0.9, 0.9)
+
+[node name="Bed" parent="game_level" instance=ExtResource("20_37hlw")]
+position = Vector2(-850, 1247.5)
+scale = Vector2(2.5, 2.5)
 
 [node name="player" parent="." instance=ExtResource("2_o0ihb")]
 z_index = 1
@@ -136,6 +140,10 @@ offset_right = 112.0
 offset_bottom = 71.0
 scale = Vector2(1.5, 1.5)
 
+[node name="DayProgressDisplay" type="Label" parent="UserInterfaceLayer"]
+offset_right = 399.0
+offset_bottom = 134.0
+
 [node name="CustomerPath" type="Path2D" parent="."]
 y_sort_enabled = true
 position = Vector2(-161, 410)
@@ -148,7 +156,6 @@ wait_time = 5.0
 autostart = true
 
 [node name="DayProgressManager" parent="." instance=ExtResource("22_m4h2d")]
-DAY_LENGTH_IN_SECONDS = 60
 
 [node name="TrashCan" parent="." instance=ExtResource("24_s17dp")]
 position = Vector2(1117, 781)

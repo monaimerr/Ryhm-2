@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="PotionRequest" load_steps=4 format=3 uid="uid://d2ng3ultvdsqh"]
 
 [ext_resource type="Resource" uid="uid://cgnuedvvcr2cs" path="res://resources/items/potions/potion_of_everything.tres" id="1_oc15h"]
-[ext_resource type="Script" uid="uid://baxg0mxfusu3a" path="res://resources/potion_request.gd" id="2_5b3d5"]
+[ext_resource type="Script" path="res://resources/potion_request.gd" id="2_5b3d5"]
 [ext_resource type="Texture2D" uid="uid://co61u7bqxmbo0" path="res://resources/request_speech_bubbles/everything.tres" id="3_hovld"]
 
 [resource]

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="PotionRequest" load_steps=4 format=3 uid="uid://chf41liyqte4c"]
 
 [ext_resource type="Resource" uid="uid://ba1rtpx22wx7t" path="res://resources/items/potions/potion_of_strength.tres" id="1_7k6b0"]
-[ext_resource type="Script" uid="uid://baxg0mxfusu3a" path="res://resources/potion_request.gd" id="2_xt4tp"]
+[ext_resource type="Script" path="res://resources/potion_request.gd" id="2_xt4tp"]
 [ext_resource type="Texture2D" uid="uid://c4ljff5of2k5n" path="res://resources/request_speech_bubbles/strength.tres" id="3_smhqb"]
 
 [resource]

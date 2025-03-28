@@ -18,7 +18,7 @@ func _on_interact():
 	print(open)
 	
 # should be called at the beginning of a new day to reset the state
-func _on_day_changed():
+func on_day_changed():
 	opened_today = false
 	interactable.interact_name = "[E] to open the shop"
 	
