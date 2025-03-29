@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=30 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://lhiyyt452wqb" path="res://scenes/entities/objects/bed.tscn" id="20_37hlw"]
 [ext_resource type="Script" uid="uid://fqjy4w760p41" path="res://scripts/entities/characters/NPCs/customer_path.gd" id="20_r4lks"]
 [ext_resource type="PackedScene" uid="uid://cgmqg8hxcsmmt" path="res://scenes/day_progress/day_progress_manager.tscn" id="22_m4h2d"]
+[ext_resource type="PackedScene" uid="uid://cxavsjams7k3x" path="res://scenes/UI/cauldron_menu/cauldronmenu.tscn" id="23_6llfj"]
 [ext_resource type="PackedScene" uid="uid://c61x4ibg3v35p" path="res://scenes/Trash_can/Trash_Can.tscn" id="24_s17dp"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
@@ -143,6 +144,8 @@ scale = Vector2(1.5, 1.5)
 [node name="DayProgressDisplay" type="Label" parent="UserInterfaceLayer"]
 offset_right = 399.0
 offset_bottom = 134.0
+
+[node name="CauldronMenu" parent="UserInterfaceLayer" instance=ExtResource("23_6llfj")]
 
 [node name="CustomerPath" type="Path2D" parent="."]
 y_sort_enabled = true
