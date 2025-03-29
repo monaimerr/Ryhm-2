@@ -2,6 +2,9 @@ extends Node2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var interactable: Area2D = $Interactable
+@onready var openShopSound = $openShopSound
+@onready var closeShopSound = $closeShopSound
+
 var open = false
 var opened_today = false
 signal shop_opened_status_changed(shop_open: bool)
@@ -13,8 +16,10 @@ func _ready() -> void:
 func _on_interact():
 	if !open and !opened_today:
 		open_shop()
+		openShopSound.play()
 	else:
 		close_shop()
+		closeShopSound.play()
 	print(open)
 	
 # should be called at the beginning of a new day to reset the state

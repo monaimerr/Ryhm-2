@@ -3,6 +3,7 @@ extends Node
 @onready var everything = preload("res://resources/items/potions/potion_of_everything.tres")
 @onready var illIntent = preload("res://resources/items/potions/potion_of_ill_intent.tres")
 @onready var invisibility = preload("res://resources/items/potions/potion_of_invisibility.tres")
+@onready var newDaySound = $newDaySound
 
 func _ready() -> void:
 	# Hooking up signals for day-night cycle
@@ -19,6 +20,8 @@ func _ready() -> void:
 
 func _new_day_begun() -> void:
 	$game_level/OpenSign.on_day_changed()
+	newDaySound.play()
+	
 
 func _shop_open_time_over() -> void:
 	$game_level/OpenSign.close_shop()

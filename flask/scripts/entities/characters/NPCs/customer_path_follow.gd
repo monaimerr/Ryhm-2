@@ -4,6 +4,7 @@ extends PathFollow2D
 @export var moveBy = 150
 @onready var timer = $Customer/WaitTimer
 @onready var customerAnimatedSprite = $Customer/AnimatedSprite2D
+@onready var newCustomerSound = $newCustomerSound
 
 
 func _ready() -> void:
@@ -32,3 +33,4 @@ func customer_timeout():
 
 func _on_toggle_visibility_timeout() -> void:
 	customer.visible = true
+	newCustomerSound.play()

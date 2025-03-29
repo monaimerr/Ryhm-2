@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://duyo58ap5vswk"]
+[gd_scene load_steps=4 format=3 uid="uid://duyo58ap5vswk"]
 
 [ext_resource type="Script" uid="uid://3nkiv502miml" path="res://scripts/entities/characters/NPCs/customer_path_follow.gd" id="1_5awvs"]
 [ext_resource type="PackedScene" uid="uid://cw3477t4v07bx" path="res://scenes/entities/characters/NPCs/customer.tscn" id="1_fjnjl"]
+[ext_resource type="AudioStream" uid="uid://cir6xpc5gqs0p" path="res://art/new_customer.mp3" id="3_5awvs"]
 
 [node name="CustomerPathFollow" type="PathFollow2D"]
 y_sort_enabled = true
@@ -19,5 +20,9 @@ rotation = 1.5708
 wait_time = 0.5
 one_shot = true
 autostart = true
+
+[node name="newCustomerSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5awvs")
+bus = &"Sound Effects"
 
 [connection signal="timeout" from="ToggleVisibility" to="." method="_on_toggle_visibility_timeout"]

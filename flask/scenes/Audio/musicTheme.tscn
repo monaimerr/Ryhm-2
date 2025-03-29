@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://8y0ru2c414t0"]
 
-[ext_resource type="AudioStream" uid="uid://bgw1qjk8k2awm" path="res://art/music.mp3" id="1_m15gt"]
+[ext_resource type="AudioStream" uid="uid://bgw1qjk8k2awm" path="res://art/music.mp3" id="1_4m58c"]
 
 [node name="MusicTheme" type="Node2D"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("1_m15gt")
+stream = ExtResource("1_4m58c")
 volume_db = -1.0
 autoplay = true
 bus = &"Main Theme"

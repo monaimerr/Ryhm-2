@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://bqs6af6le0g4i"]
 
-[ext_resource type="Script" uid="uid://dwpqu5sqrehk4" path="res://scenes/Audio/walking_sound.gd" id="1_m63i2"]
-[ext_resource type="AudioStream" uid="uid://c3ci76vswhsi6" path="res://art/step2.mp3" id="2_m63i2"]
+[ext_resource type="Script" uid="uid://dwpqu5sqrehk4" path="res://scripts/audio/walking_sound.gd" id="1_wb8qn"]
+[ext_resource type="AudioStream" uid="uid://c3ci76vswhsi6" path="res://art/step2.mp3" id="2_fwfoh"]
 
 [node name="WalkingSound" type="Node2D"]
-script = ExtResource("1_m63i2")
+script = ExtResource("1_wb8qn")
 
 [node name="steps" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_m63i2")
+stream = ExtResource("2_fwfoh")
 volume_db = -5.318
 max_polyphony = 2
 bus = &"Walking"

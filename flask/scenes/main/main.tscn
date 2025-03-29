@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://cxavsjams7k3x" path="res://scenes/UI/cauldron_menu/cauldronmenu.tscn" id="23_6llfj"]
 [ext_resource type="Script" uid="uid://dgxsmw8stpyd1" path="res://scripts/UI/money_label/player_money_label.gd" id="24_0bhws"]
 [ext_resource type="PackedScene" uid="uid://c61x4ibg3v35p" path="res://scenes/Trash_can/Trash_Can.tscn" id="24_s17dp"]
+[ext_resource type="AudioStream" uid="uid://dwcbh1jgg5xky" path="res://art/new_day.mp3" id="27_0bhws"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l3cfh"]
 
@@ -176,6 +177,10 @@ autostart = true
 
 [node name="TrashCan" parent="." instance=ExtResource("24_s17dp")]
 position = Vector2(1117, 781)
+
+[node name="newDaySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("27_0bhws")
+bus = &"Sound Effects"
 
 [connection signal="shop_opened_status_changed" from="game_level/OpenSign" to="CustomerPath" method="_on_open_sign_shop_opened_status_changed"]
 [connection signal="timeout" from="CustomerSpawnTimer" to="CustomerPath" method="_on_customer_spawn_timer_timeout"]
