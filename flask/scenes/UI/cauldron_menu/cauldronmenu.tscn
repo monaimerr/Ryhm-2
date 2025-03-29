@@ -1,36 +1,93 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxavsjams7k3x"]
+[gd_scene load_steps=4 format=3 uid="uid://cxavsjams7k3x"]
 
 [ext_resource type="Script" uid="uid://cbgahdhfj4q7t" path="res://scripts/entities/objects/cauldron/cauldronmenu.gd" id="1_8kqvv"]
+[ext_resource type="Script" uid="uid://dc2mqxidah55r" path="res://scenes/UI/cauldron_menu/love_potion_button.gd" id="2_voa06"]
+[ext_resource type="Script" uid="uid://dh5geo2v48jsk" path="res://scenes/UI/cauldron_menu/texture_rect.gd" id="3_voa06"]
 
 [node name="Cauldronmenu" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_right = 400.0
+offset_bottom = 400.0
+grow_horizontal = 0
 script = ExtResource("1_8kqvv")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-layout_mode = 0
-offset_left = 362.0
-offset_top = 200.0
-offset_right = 762.0
+z_index = 1
+layout_direction = 3
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -568.0
 offset_bottom = 1000.0
+grow_horizontal = 0
+columns = 3
 
-[node name="LovePotionButton" type="TextureButton" parent="GridContainer"]
+[node name="LovePotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
+text = "LovePotion"
+script = ExtResource("2_voa06")
 
-[node name="IllIntentPotionButton" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
+[node name="TextureRect" type="TextureRect" parent="GridContainer/LovePotionButton"]
+clip_contents = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_voa06")
 
-[node name="CloseButton" type="TextureButton" parent="GridContainer"]
+[node name="IllIntentPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
+text = "IllIntent"
 
-[node name="StrengthPotionButton" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
+[node name="TextureRect" type="TextureRect" parent="GridContainer/IllIntentPotionButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="InvisibilityPotionButton" type="TextureButton" parent="GridContainer"]
+[node name="CloseButton" type="Button" parent="GridContainer"]
 layout_mode = 2
+text = "CloseButton"
 
-[node name="HealingPotionButton" type="TextureButton" parent="GridContainer"]
-layout_mode = 2
+[node name="TextureRect" type="TextureRect" parent="GridContainer/CloseButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="EverythingPotionButton" type="TextureButton" parent="GridContainer"]
+[node name="StrengthPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
+text = "StrenghButton"
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/StrengthPotionButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InvisibilityPotionButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "InvisibilityButton"
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/InvisibilityPotionButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealingPotionButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "HealingButton"
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HealingPotionButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EverythingPotionButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+text = "EverythingButton"
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/EverythingPotionButton"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
