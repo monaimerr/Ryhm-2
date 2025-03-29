@@ -6,3 +6,4 @@ func _ready() -> void:
 	
 func update_label():
 	text = str(MoneyManager.amount)
+	
