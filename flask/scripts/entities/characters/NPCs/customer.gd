@@ -23,7 +23,7 @@ func _on_interact():
 	if interactable.is_interactable:
 		if InventoryManager.remove_item(potionRequest.potion):
 			# Request completed
-			# The player should be rewarded with money here
+			MoneyManager.add_money(potionRequest.price)
 			leave_shop()
 		
 

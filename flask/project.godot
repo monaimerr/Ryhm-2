@@ -19,6 +19,7 @@ config/icon="res://art/icon.svg"
 [autoload]
 
 InventoryManager="*res://scripts/UI/inventory/inventory_manager.gd"
+MoneyManager="*res://scripts/globals/money_manager.gd"
 
 [display]
 
