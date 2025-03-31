@@ -1,5 +1,5 @@
 extends Control
-
+#buttons
 @onready var grid_container = $GridContainer 
 @onready var close_button = $GridContainer/CloseButton
 @onready var love_potion_button = $GridContainer/LovePotionButton
@@ -8,6 +8,23 @@ extends Control
 @onready var invisibility_potion_button = $GridContainer/InvisibilityPotionButton
 @onready var healing_potion_button = $GridContainer/HealingPotionButton
 @onready var everything_potion_button = $GridContainer/EverythingPotionButton
+
+#potions
+@onready var lovepotion = preload("res://resources/items/potions/potion_of_love.tres")
+@onready var illintentpotion = preload("res://resources/items/potions/potion_of_ill_intent.tres")
+@onready var strengthpotion = preload("res://resources/items/potions/potion_of_strength.tres")
+@onready var invisibilitypotion = preload("res://resources/items/potions/potion_of_invisibility.tres")
+@onready var healingpotion = preload("res://resources/items/potions/potion_of_healing.tres")
+@onready var everythingpotion = preload("res://resources/items/potions/potion_of_everything.tres")
+
+@onready var refs = {
+	"Potion of Love": lovepotion,
+	"Potion of Ill Intent": illintentpotion,
+	"Potion of Strength": strengthpotion,
+	"Potion of Invisibility": invisibilitypotion,
+	"Potion of Healing": healingpotion,
+	"Potion of Everything": everythingpotion
+}
 
 #all recipes
 var recipes = {
@@ -23,8 +40,8 @@ func _ready() -> void:
 	position = Vector2(1600, 500) #hardcoded position for now, might change later
 	visible = false
 	modulate = Color(1,1,1,1)
-	
 	z_index = 1
+	print(refs.get("Potion of Love").name)
 
 	# connect button signals 
 	connect_button(love_potion_button, "Potion of Love")
@@ -91,9 +108,7 @@ func craft_potion(potion_name: String, required_items: Array) -> void:
 			print("error: Tried to remove", req, "but it wasn't found in inventory!")
 
 	# create the potion object
-	var potion = Item.new()  # create a new potion instance
-	potion.name = potion_name  # name
-	potion.type = Item.Type.POTION  # set type, this might be wrong way to implement?
+	var potion = refs.get(potion_name)  # create a new potion instance
 	# check to make sure potion crafts, visual not working
 	print("Potion created: ", potion.name)
 
