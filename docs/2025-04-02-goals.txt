@@ -1,0 +1,13 @@
+2025-04-02 Goals
+Assigned:
+[  ] There are no sound effects left to add
+[  ] The DayProgressManager tracks number of days
+[  ] Crafted potions have a texture and are visible in inventory
+
+Unassigned:
+[  ] The trashcan gives some way of selecting which potions to delete
+[  ] Sleeping in bed plays a transition visual effect
+[  ] The player cannot walk out into the void
+[  ] Third interaction with ingredient shelf adds an order and deducts money from the player
+[  ] Ingredient shelf: ordered ingredients are added to the total when transitioning to the next day
+[  ] The game has been tuned for game balance

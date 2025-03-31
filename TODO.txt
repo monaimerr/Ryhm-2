@@ -61,6 +61,8 @@ Project Task List:
 		-You can get a reference to the player inventory with "InventoryManager.playerInv"
 		-If all the items are present, the items are removed from the inventory and the potion is added to the inventory
 		-You can use "InventoryManager.add_item" and "InventoryManager.remove_item" functions to implement these features
+	
+	[ ] (Eemeli, Otto) Fix crafted potions not having a texture
 
 [x] (Otto) Implement the first prototype of a customer NPC
 		-The customers can walk up to the counter and wait in line if there are other customers
@@ -86,10 +88,6 @@ Project Task List:
 	[X] (Oskari) Create a night-to-morning transition effect
 		-Resets the "day progress", to be activated by bed interaction
 
-	[ ] (Oskari) Add "daytime events" to time-tracking system
-		-A list of (time, function) tuples, triggers `function` at `time`
-		-The list is static, cannot be changed during runtime (K.I.S.S.)
-	
 	[ ] (Oskari) Track the number of times the player has slept, show it to the player
 
 [] (Mounaim) Implement the trash can

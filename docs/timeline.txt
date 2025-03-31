@@ -1,0 +1,29 @@
+b4:
+	Discord: Maxim creates the team's Discord server
+2025-01-27:
+	Discord: Matilda, Oskari, Otto join the Discord server
+2025-01-28:
+	Discord: Eemeli joins the Discord server
+2025-01-29:
+	Meeting: Maxim, Oskari and Otto happen to meet at Joensuu campus
+2025-02-03:
+	Discord: Mounaim joins the Discord server
+2025-02-05:
+	Meeting: General meeting
+		Maxim is chosen as project leader
+2025-02-10:
+	Meeting: General meeting
+2025-02-13:
+	Discord: Denis joins the Discord server
+	Meeting: General meeting
+2025-02-17:
+	Meeting: General meeting
+2025-02-18:
+	Meeting: Optional meeting for discussing game ideas
+2025-02-20:
+	Meeting: General meeting
+2025-02-24:
+	Meeting: General meeting, Implementation Plan draft review
+2025-02-26:
+	Meeting: General meeting, final I.P. review
+	Course: Implementation Plan submitted to ELearn

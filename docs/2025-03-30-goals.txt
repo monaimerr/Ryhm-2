@@ -1,10 +1,10 @@
 Goals for 2025-03-30 Sunday
 
-[] Player can use items from their inventory to make potions.
-[] Player can remove an item from their inventory via trashcan.
-[] Interacting with the bed transitions to the next day.
-[] The game tracks and shows how many days have passed.
-[] The player has some money that they can gain and spend.
-[] If customers request is filled within time limit, the potion will be given to the customer and player receives money.
-[] Interacting with the cauldron will open a potion crafting interface that consumes ingredients and gives potions.
-[] The game plays appropriate sound effects for various in-game events.
+[OK] Player can use items from their inventory to make potions.
+[OK] Player can remove an item from their inventory via trashcan.
+[OK] Interacting with the bed transitions to the next day.
+[__] The game tracks and shows how many days have passed.
+[OK] The player has some money that they can gain and spend.
+[OK] If customers request is filled within time limit, the potion will be given to the customer and player receives money.
+[OK] Interacting with the cauldron will open a potion crafting interface that consumes ingredients and gives potions.
+[OK] The game plays appropriate sound effects for various in-game events.

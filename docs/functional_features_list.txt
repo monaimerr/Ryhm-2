@@ -5,16 +5,15 @@ Player character
 
 Interaction with objects
 [X] Player can take items to their inventory.
-[] Player can use items from their inventory to make potions.
+[X] Player can use items from their inventory to make potions.
 [X] Player can put items back to shelves.
-[] Player can remove an item from their inventory via trashcan.
+[X] Player can remove an item from their inventory via trashcan.
 
 Customers
-[] Customers will walk in the shop and wait in line.
-[] Interacting with customer will open customer dialogue.
-[] Interacting with customer will start timer for that customers service.
-[] If customers request is filled within time limit, the potion will be given to the customer and player receives money.
-[] If customers request is not filled within time limit, the customer will leave.
+[X] Customers will walk in the shop and wait in line.
+[X] Interacting with customer will start timer for that customers service.
+[X] If customers request is filled within time limit, the potion will be given to the customer and player receives money.
+[X] If customers request is not filled within time limit, the customer will leave.
 
 -- THIS IS WHERE WE HAVE A WORKING GAME CYCLE --
 
@@ -25,22 +24,22 @@ Important features for better game experience
 
 Variability of potions and customers
 [] Player has access to recipe book (top menu) with directions on making each potion.
-[] Interacting with the cauldron will open a menu of all craftable potions.
+[X] Interacting with the cauldron will open a menu of all craftable potions.
 (If the player has correct ingredients for only one potion, only that one potion will appear on the list.)
 [] There are multiple potion requests the customers can ask from the player.
-[] There are multiple customer characters who will visit the shop.
+[X] There are multiple customer characters who will visit the shop.
 
 Other shop complications
-[] Player can choose to open and close the shop.
-	[] Customers will only come in when shop is open.
-[] Player has a set amount of money to start the game.
+[X] Player can choose to open and close the shop.
+	[X] Customers will only come in when shop is open.
+[X] Player has a set amount of money to start the game.
 [] Player can use their money to buy ingredients.
 (There is a shopping window for this that can be opened from the menu on top of the screen.)
 	[] The bought ingredients will be delivered to the shop after a short delay.
 	(The delay should be about half of a customers service timer.)
 		[] Game pausing should also effect on this delay timer.
 	[] The amount of each ingredient is shown on the corresponding ingredient shelf.
-[] Player has a set amount of ingredients to start the game.
+[X] Player has a set amount of ingredients to start the game.
 
 Day cycle
 [] Player will have a daily "energy" (a timer that will start at the beginning of each day).
@@ -55,6 +54,7 @@ Game ending
 
 -- THIS IS WHERE WE HAVE A FULLY WORKING GAME --
 
+[] Interacting with customer will open customer dialogue.
 Fun things to possibly add if there is time
 [] Crafting "minigame" for making potions at the cauldron instead of our list, choose and click -type system.
 (Will take more planning.)

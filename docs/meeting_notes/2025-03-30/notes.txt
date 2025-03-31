@@ -1,0 +1,16 @@
+2025-03-30 General Meeting
+
+* let's wing it
+* I've kinda started writing the final report
+	* namely about implementation plan success
+	* Good, critical assessment
+	* A little too critical? (More "on a positive note.")
+	* Oskari: "I write in a way that positives are expected, not praiseworthy"
+* Planning final days:
+	* Here, to consult programmers?
+	* Separate work session?
+	* Otto: No need for a separate meeting
+* Goals to achieve until 2025-03-30 Sunday
+	* Most met, except 1 trivial
+* Setting final goals
+	* Discussing trash can
