@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=40 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
@@ -29,7 +29,9 @@
 [ext_resource type="Script" uid="uid://dgxsmw8stpyd1" path="res://scripts/UI/money_label/player_money_label.gd" id="24_0bhws"]
 [ext_resource type="PackedScene" uid="uid://c61x4ibg3v35p" path="res://scenes/Trash_can/Trash_Can.tscn" id="24_s17dp"]
 [ext_resource type="AudioStream" uid="uid://bmnq3h1sx1s0r" path="res://art/money.mp3" id="25_i7in8"]
+[ext_resource type="Texture2D" uid="uid://dpw3nu2ryxgon" path="res://art/recipes.png" id="26_rofvo"]
 [ext_resource type="AudioStream" uid="uid://dwcbh1jgg5xky" path="res://art/new_day.mp3" id="27_0bhws"]
+[ext_resource type="Script" uid="uid://crmukt5rnt4wr" path="res://scripts/UI/recipe_list/recipe_list.gd" id="27_tbnf8"]
 [ext_resource type="AudioStream" uid="uid://ds4x08nmynnel" path="res://art/trash.mp3" id="29_ii537"]
 [ext_resource type="Script" uid="uid://b4gupn0bx7jl" path="res://scripts/audio/money_sound.gd" id="30_gkmcc"]
 
@@ -40,6 +42,10 @@ size = Vector2(610, 220)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gkmcc"]
 size = Vector2(305, 57.5002)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tbnf8"]
+font_size = 20
+font_color = Color(0.419813, 0.419813, 0.419813, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_m4h2d"]
 _data = {
@@ -196,6 +202,29 @@ theme_override_font_sizes/normal_font_size = 32
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("24_0bhws")
+
+[node name="RecipeList" type="TextureRect" parent="UserInterfaceLayer"]
+visible = false
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 114.0
+offset_top = -142.0
+offset_right = 1014.0
+offset_bottom = 758.0
+grow_vertical = 2
+scale = Vector2(0.45297, 0.446349)
+size_flags_horizontal = 0
+texture = ExtResource("26_rofvo")
+script = ExtResource("27_tbnf8")
+
+[node name="Label" type="Label" parent="UserInterfaceLayer"]
+offset_left = 114.0
+offset_top = 206.0
+offset_right = 382.0
+offset_bottom = 244.0
+text = "Press [Tab] to Open Recipes"
+label_settings = SubResource("LabelSettings_tbnf8")
 
 [node name="CustomerPath" type="Path2D" parent="."]
 y_sort_enabled = true
