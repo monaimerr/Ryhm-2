@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://b1kgo5jsbegj3"]
+[gd_scene load_steps=37 format=3 uid="uid://b1kgo5jsbegj3"]
 
 [ext_resource type="PackedScene" uid="uid://hvucvjcnynp2" path="res://scenes/game_world/game_level.tscn" id="1_ae60x"]
 [ext_resource type="Script" uid="uid://cnh0bb26c321e" path="res://scripts/main/main.gd" id="1_p8abn"]
@@ -156,7 +156,6 @@ scale = Vector2(2.5, 2.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="game_level/Door"]
 position = Vector2(952.5, 2113.75)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_gkmcc")
 
 [node name="player" parent="." instance=ExtResource("2_o0ihb")]
