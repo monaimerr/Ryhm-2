@@ -29,4 +29,8 @@ func open_menu():
 
 	
 func close_menu():
-	print("Closing potion crafting menu...")
+	if cauldron_menu.visible:
+		cauldron_menu.visible = false
+
+func _on_interactable_body_exited(body: Node2D) -> void:
+	close_menu()
