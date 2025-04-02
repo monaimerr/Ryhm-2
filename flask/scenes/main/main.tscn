@@ -74,43 +74,43 @@ bus = &"Sound Effects"
 [node name="WaterShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(2602.5, 817.5)
 item = ExtResource("3_6q06x")
-price = 1
+price = 2
 texture = SubResource("PlaceholderTexture2D_l3cfh")
 
 [node name="MysteriousLiquidShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(3205, 825)
 item = ExtResource("4_ou6is")
-price = 5
+price = 10
 
 [node name="SpruceShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(5592.5, -1575)
 item = ExtResource("5_necax")
-price = 2
+price = 4
 
 [node name="BirchShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(5002.5, -1577.5)
 item = ExtResource("6_r4lks")
-price = 2
+price = 4
 
 [node name="LavenderShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(4407.5, -967.5)
 item = ExtResource("8_yyfjg")
-price = 3
+price = 6
 
 [node name="MapleShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(3815, -980)
 item = ExtResource("8_pg34l")
-price = 2
+price = 4
 
 [node name="TwilightShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(-2192.5, -977.5)
 item = ExtResource("9_m4h2d")
-price = 20
+price = 25
 
 [node name="DawnShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(-1587.5, -972.5)
 item = ExtResource("10_p8abn")
-price = 20
+price = 25
 
 [node name="TimeShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(2305, -977.5)
@@ -125,7 +125,7 @@ price = 12
 [node name="IntentShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(-997.5, -975)
 item = ExtResource("13_6llfj")
-price = 13
+price = 20
 
 [node name="NothingShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(502.5, -967.5)
@@ -140,7 +140,7 @@ price = 10
 [node name="HollyhockShelf" parent="game_level" instance=ExtResource("5_6q06x")]
 position = Vector2(3197.5, -970)
 item = ExtResource("6_hujxm")
-price = 3
+price = 6
 
 [node name="CounterArea2D" type="Area2D" parent="game_level"]
 collision_layer = 8
@@ -234,10 +234,11 @@ script = ExtResource("20_r4lks")
 metadata/_edit_group_ = true
 
 [node name="CustomerSpawnTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 10.0
 autostart = true
 
 [node name="DayProgressManager" parent="." instance=ExtResource("22_m4h2d")]
+DAY_LENGTH_IN_SECONDS = 300
 
 [node name="TrashCan" parent="." instance=ExtResource("24_s17dp")]
 position = Vector2(1117, 781)
@@ -257,3 +258,4 @@ script = ExtResource("30_gkmcc")
 
 [connection signal="shop_opened_status_changed" from="game_level/OpenSign" to="CustomerPath" method="_on_open_sign_shop_opened_status_changed"]
 [connection signal="timeout" from="CustomerSpawnTimer" to="CustomerPath" method="_on_customer_spawn_timer_timeout"]
+[connection signal="new_day_begun" from="DayProgressManager" to="CustomerPath" method="_on_day_progress_manager_new_day_begun"]

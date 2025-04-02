@@ -1,8 +1,5 @@
 extends Node
 
-@onready var everything = preload("res://resources/items/potions/potion_of_everything.tres")
-@onready var illIntent = preload("res://resources/items/potions/potion_of_ill_intent.tres")
-@onready var invisibility = preload("res://resources/items/potions/potion_of_invisibility.tres")
 @onready var newDaySound = $newDaySound
 
 func _ready() -> void:
@@ -13,10 +10,6 @@ func _ready() -> void:
 	$game_level/OpenSign.shop_opened_status_changed.connect(_shop_opened_or_closed)
 	$game_level/Bed.sleeping.connect($DayProgressManager.start_new_day)
 	
-	# Adds a few potions to the players inventory for testing purposes
-	InventoryManager.add_item(everything)
-	InventoryManager.add_item(illIntent)
-	InventoryManager.add_item(invisibility)
 
 func _new_day_begun() -> void:
 	$game_level/OpenSign.on_day_changed()

@@ -17,6 +17,7 @@ func _ready() -> void:
 	animated_sprite_2d.sprite_frames = spriteFrames
 	speech_bubble.texture = potionRequest.speechBubbleTexture
 	interactable.interact = _on_interact
+	interactable.interact2 = _on_interact2
 	interactable.is_interactable = false
 
 func _on_interact():
@@ -25,7 +26,10 @@ func _on_interact():
 			# Request completed
 			MoneyManager.add_money(potionRequest.price)
 			leave_shop()
-		
+
+func _on_interact2():
+	if interactable.is_interactable:
+		leave_shop()
 
 # Updates the progressbar visual based on the remaining wait_timer time
 func _physics_process(delta: float) -> void:

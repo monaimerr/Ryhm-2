@@ -34,35 +34,35 @@ columns = 3
 
 [node name="LovePotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "LoveButton"
+text = "Potion of Love"
 icon = SubResource("AtlasTexture_6c507")
 script = ExtResource("2_voa06")
 
 [node name="IllIntentPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "IllIntent"
+text = "Potion of Ill Intent"
 script = ExtResource("3_4gih0")
 
 [node name="StrengthPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "StrenghButton"
+text = "Potion of Strength"
 script = ExtResource("4_6c507")
 
 [node name="InvisibilityPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "InvisibilityButton"
+text = "Potion of Invisibility"
 script = ExtResource("5_olmoy")
 
 [node name="HealingPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "HealingButton"
+text = "Potion of Healing"
 script = ExtResource("6_frrtv")
 
 [node name="EverythingPotionButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "EverythingButton"
+text = "Potion of Everything"
 script = ExtResource("7_lylft")
 
 [node name="CloseButton" type="Button" parent="GridContainer"]
 layout_mode = 2
-text = "CloseButton"
+text = "Close"

@@ -11,7 +11,7 @@ enum DayState {
 }
 
 var state: DayState;
-var DAY_LENGTH_IN_SECONDS: int = 60
+@export var DAY_LENGTH_IN_SECONDS: int = 60
 var elapsedSeconds: int = 0
 @onready var secondTimer: Timer = $Timer
 

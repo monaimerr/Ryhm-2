@@ -46,7 +46,7 @@ scale = Vector2(0.678333, 0.678542)
 sprite_frames = SubResource("SpriteFrames_a0uba")
 
 [node name="Interactable" parent="." instance=ExtResource("3_ersvl")]
-interact_name = "[E] Talk to Customer"
+interact_name = "[E] Serve Customer, [R] Turn Them Away"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
 position = Vector2(65, -195)
@@ -63,7 +63,7 @@ shape = SubResource("RectangleShape2D_6vy2j")
 debug_color = Color(0.797617, 0.422829, 1.92523e-07, 0.42)
 
 [node name="WaitTimer" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 70.0
 one_shot = true
 autostart = true
 

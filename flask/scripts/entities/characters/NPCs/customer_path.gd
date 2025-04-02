@@ -1,5 +1,8 @@
 extends Path2D
 
+@onready var day_progress_manager: Node = $"../DayProgressManager"
+@onready var cosine_multiplier = randi_range(12,20)
+
 # Loads the scene that is required to spawn new customers
 @onready var customer_path_follow_scene = preload("res://scenes/entities/characters/NPCs/customer_path_follow.tscn")
 
@@ -33,6 +36,12 @@ func _ready() -> void:
 # Instanciates a new customer if current customer count is less than max_customers and shop is open
 func _on_customer_spawn_timer_timeout() -> void:
 	if canSpawn and get_child_count() < max_customers:
+		
+		# Choosing randomly if customer is spawned or not
+		if !should_spawn():
+			print("should spawn = false")
+			return
+		
 		var instance = customer_path_follow_scene.instantiate()
 		
 		# The customers appearance is picked randomly
@@ -78,3 +87,14 @@ func pick_random_sprite_frame():
 		sprite_frames = sprite_frames_full.duplicate()
 		sprite_frames_full.shuffle()
 	return sprite_frames.pop_front()
+	
+func should_spawn():
+	print("child count: ",get_child_count())
+	var limit = 0.3 * cos(cosine_multiplier * day_progress_manager.get_day_progress()) + 0.65 - 0.15 * get_child_count()
+	print(str("limit: ", limit))
+	return randf() < limit
+	
+		
+func _on_day_progress_manager_new_day_begun() -> void:
+	cosine_multiplier = randi_range(12, 20)
+	print("cosine_multiplier:", cosine_multiplier)
